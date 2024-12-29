@@ -5,10 +5,10 @@ import { useState, useEffect } from 'react';
 export default function ThemeToggle() {
   const [theme, setTheme] = useState('corporate');
   
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'corporate';
-    setTheme(savedTheme);
-  }, []);
+  // useEffect(() => {
+  //   const savedTheme = localStorage.getItem('theme') || 'corporate';
+  //   setTheme(savedTheme);
+  // }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === 'corporate' ? 'business' : 'corporate';
@@ -16,6 +16,9 @@ export default function ThemeToggle() {
     localStorage.setItem('theme', newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
   };
+
+
+  // setTheme('corporate');
 
   return (
     <label

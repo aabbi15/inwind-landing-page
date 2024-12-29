@@ -9,6 +9,7 @@ import LangSwitch from './langSwitch';
 import { usePathname } from 'next/navigation';
 import { defaultLocale } from '@/lib/i18n';
 import { NavLinksList } from '@/lib/navLinksList';
+import NavButton from './navButton';
 
 export default function Navbar() {
 	const pathname = usePathname();
@@ -38,11 +39,14 @@ export default function Navbar() {
 				<Image
 					width={200}
 					height={200}
-					src={'/logo.gif'}
-					className='transition-all hover:scale-110 w-6 md:w-10 h-6 md:h-10'
+					src={'/onlylogo.png'}
+					className='rotator transition-all hover:scale-110 w-6 md:w-10 h-6 md:h-10'
 					alt='logo'
 				></Image>
-				<h2 className='ml-3 font-bold leading-5'>Landing Page</h2>
+				<div className='flex flex-col text-base-content/80'>
+				<h2 className='ml-3 font-bold leading-5'>EXPO ESSENTIALS</h2>
+				<p className='ml-3 text-xs'>BOOTH CONSTRUCTION</p>
+				</div>
 			</a>
 
 			<ul className='w-3/5 px-5 font-medium hidden md:flex flex-nowrap items-center justify-around'>
@@ -67,17 +71,11 @@ export default function Navbar() {
 			</ul>
 
 			<div className='md:w-1/5 flex items-center justify-end gap-2'>
-				<label className='flex items-center justify-center md:bg-base-100 md:rounded-full w-5 md:w-8 h-5 md:h-8 md:shadow-sm md:hover:shadow-md transition-all'>
-					<a
-						aria-label='get template source code'
-						title='get template source code'
-						href='https://github.com/huglemon/inwind-landing-page'
-					>
-						<SiGithub size={14} />
-					</a>
-				</label>
-				<ThemeToggle />
-				<LangSwitch />
+				
+				{/* <ThemeToggle /> */}
+				{/* <LangSwitch /> */}
+				<NavButton className='ml-2'/>
+
 				<details className='flex md:hidden dropdown dropdown-end'>
 					<summary className='btn btn-ghost p-0'>
 						<MdMenu size={18} />
@@ -98,6 +96,8 @@ export default function Navbar() {
 						})}
 					</ul>
 				</details>
+
+
 			</div>
 		</header>
 	);
