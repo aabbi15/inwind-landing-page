@@ -28,18 +28,21 @@ export default function Feature({ locale, langName = 'en' }) {
 
 					<h3 className='font-bold text-3xl md:text-5xl bg-gradient-to-r from-base-content from-50% to-[#9c9c9c] md:text-center bg-clip-text text-transparent !leading-[1.25em]'>
 						{locale.h3}
+
 					</h3>
 
 					<h4 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center'>
-						{locale.description1}
+						{/* {locale.description1} */}
+
+						Hear from some of our past customers.{' '}
 						<a
 							title='feedback'
 							className='text-primary'
 							href='#'
 						>
-							{locale.description2}
+							{/* {locale.description2} */}
 						</a>
-						{locale.description3}
+						{/* {locale.description3} */}
 					</h4>
 				</div>
 			</motion.div>
