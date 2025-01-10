@@ -3,6 +3,9 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import { MyModal } from '@/components/mymodal';
+
+
 
 
 export default function Portfolio() {
@@ -69,17 +72,21 @@ export default function Portfolio() {
             <button type="button" onClick={() => changeCategory('Custom Stand')} className="text-gray-900 border border-gray-200 hover:border-gray-300 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full md:text-base text-sm font-medium px-5 py-2.5 text-center mr-3 mb-3">Custom Stand</button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4  ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4  ">
         <AnimatePresence>
                     {filteredImages.map(image => (
+
+                        <div>
+                            <MyModal/>
                         <motion.div
                             key={image.id} // Use unique id for key
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0, scale: 0.5 }}
                             transition={{ duration: 0.5, ease: "easeInOut",type: 'spring', stiffness: 50, damping: 10 }}
-                            className="relative h-64 w-full"
+                            className="relative h-96 w-full"
                         >
+                            {/* <MyModal/> */}
                             <Image
                                 alt={image.name}
                                 src={image.src}
@@ -88,6 +95,7 @@ export default function Portfolio() {
                                 className="rounded-lg"
                             />
                         </motion.div>
+                        </div>
                     ))}
                 </AnimatePresence>
         </div>

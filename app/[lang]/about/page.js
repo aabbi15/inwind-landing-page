@@ -112,7 +112,7 @@ export default function Page({ params }) {
 					transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
 				>
 					<div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
-						<div className='w-full md:w-3/5 relative rounded-2xl overflow-hidden shadow-xl'>
+						<div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
 							<Image
 								src={'/hero2.jpg'}
 								layout='fill'
@@ -121,12 +121,26 @@ export default function Page({ params }) {
 								alt='about_1'
 							/>
 						</div>
-						<div className='w-full md:w-2/5 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
+						<div className='w-full md:w-3/5 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
 							<div className='flex items-center justify-between py-5'>
-								<h2 className='text-3xl font-bold'>{dict.About.why}</h2>
+								<h2 className='text-3xl font-bold'>
+									
+									{/* {dict.About.why} */}
+									The journey started with one clear <span className=' '> aspiration</span>
+									</h2>
 								<BsPatchQuestionFill size={48} />
 							</div>
-							<p className={`text-lg break-words ${langName === 'ar' && 'text-right'}`} >{dict.About.why_content}</p>
+							<p className={`text-lg break-words ${langName === 'ar' && 'text-right'}`} >
+								
+								{/* {dict.About.why_content} */}
+								
+								We&apos;re a team of dedicated project managers, joiners and designers delivering an unrivalled 
+service in the industry. 
+With our combined experience and our creative outlook towards making sure each build is 
+tailored to you; we continue to build up a wealth of successfully delivered projects. 
+Our enthusiasm and passion about what we do is maintained and demonstrated in the 
+challenging concepts we often pursue and above all we never give up. 
+								</p>
 						</div>
 					</div>
 				</motion.div>
@@ -136,14 +150,24 @@ export default function Page({ params }) {
 					transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
 				>
 					<div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
-						<div className='w-full md:w-2/5 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
+						<div className='w-full md:w-3/5 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
 							<div className='flex items-center justify-between py-5'>
 								<RiTeamFill size={48} />
-								<h2 className='text-3xl font-bold'>{dict.About.team}</h2>
+								<h2 className='text-3xl font-bold'>
+									
+									{/* {dict.About.team} */}
+									Excellence. Control. Trust. 
+									</h2>
 							</div>
-							<p className={`text-lg break-words ${langName === 'ar' && 'text-right'}`} >{dict.About.team_content}</p>
+							<p className={`text-lg break-words ${langName === 'ar' && 'text-right'}`} >
+								
+								{/* {dict.About.team_content} */}
+								Discover unparalleled clarity in event management with Expo Essentials™. We empower 
+exhibitors with cutting-edge solutions, seamless processes, and stress-free experiences that 
+bring your vision to life. 
+								</p>
 						</div>
-						<div className='w-full md:w-3/5 relative rounded-2xl overflow-hidden shadow-xl'>
+						<div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
 							<Image
 								src={'/example-expo.jpg'}
 								layout='fill'
@@ -151,6 +175,44 @@ export default function Page({ params }) {
 								className='hover:scale-105 transition-all'
 								alt='about_2'
 							/>
+						</div>
+					</div>
+				</motion.div>
+
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
+				>
+					<div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
+						<div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
+							<Image
+								src={'/hero2.jpg'}
+								layout='fill'
+								objectFit='cover'
+								className='hover:scale-105 transition-all'
+								alt='about_1'
+							/>
+						</div>
+						<div className='w-full md:w-3/5 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
+							<div className='flex items-center justify-between py-5'>
+								<h2 className='text-3xl font-bold'>
+									
+									{/* {dict.About.why} */}
+									Building visions, creating reality. 
+									</h2>
+								<BsPatchQuestionFill size={48} />
+							</div>
+							<p className={`text-lg break-words ${langName === 'ar' && 'text-right'}`} >
+								
+								{/* {dict.About.why_content} */}
+								
+								We aim to ensure our clients keep returning by prioritizing customer satisfaction above all. Our 
+blend of expert knowledge and hands-on experience is complemented by a personal touch. 
+When you approach us for exhibition build inspiration, you will be paired with a dedicated 
+Project Manager. This manager will accompany you from the initial concept to the final 
+execution, providing guidance and collaboration every step of the journey. 
+								</p>
 						</div>
 					</div>
 				</motion.div>
