@@ -114,7 +114,7 @@ export default function Page({ params }) {
 					<div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
 						<div className='w-full md:w-3/5 relative rounded-2xl overflow-hidden shadow-xl'>
 							<Image
-								src={'/image/about_1.jpg'}
+								src={'/hero2.jpg'}
 								layout='fill'
 								objectFit='cover'
 								className='hover:scale-105 transition-all'
@@ -145,7 +145,7 @@ export default function Page({ params }) {
 						</div>
 						<div className='w-full md:w-3/5 relative rounded-2xl overflow-hidden shadow-xl'>
 							<Image
-								src={'/image/about_2.jpg'}
+								src={'/example-expo.jpg'}
 								layout='fill'
 								objectFit='cover'
 								className='hover:scale-105 transition-all'

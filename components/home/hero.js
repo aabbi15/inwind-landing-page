@@ -91,15 +91,16 @@ export default function Hero({ locale, CTALocale }) {
 						delay: duration == 0.8 ? 0.4 : 0,
 						duration: duration,
 					}}
-					className='w-full'
+					className='w-full justify-center items-center flex relative'
 				>
 					<Image
-						width={1024}
-						height={600}
+						width={800}
+						height={900}
 						src={'/hero3.jpg'}
-						className='hidden md:flex w-full -mt-10'
+						className='hidden md:flex w-[100%] -mt-10 rounded-lg '
 						alt='app demo'
 					/>
+
 				</motion.div>
 			</section>
 
