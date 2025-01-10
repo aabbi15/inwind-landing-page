@@ -80,7 +80,7 @@ export default function Feature({ locale, langName = 'en' }) {
 					duration: 0.5,
 				}}
 			>
-				<div className=' relative z-10 w-full md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 md:mt-20'>
+				<div className=' relative z-10 w-full md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 md:mt-20'>
 				<ProjectCard/>
 			<ProjectCard/>
 			<ProjectCard/>

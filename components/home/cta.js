@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { SiGithub } from 'react-icons/si';
 import Button from '../common/navButton';
+import CTAButton from '../common/ctabutton';
 
 export default function Cta({ locale, CTALocale }) {
 	return (
@@ -36,7 +37,8 @@ export default function Cta({ locale, CTALocale }) {
 						<SiGithub /> {CTALocale.btn1}
 					</a> */}
 
-					<Button/>
+					{/* <Button/> */}
+					<CTAButton className='mt-5'/>
 				</div>
 			</motion.div>
 

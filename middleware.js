@@ -7,6 +7,7 @@ const rewritePaths = [
 	{ pattern: /^\/about(\/)?$/, destination: '/en/about' },
     { pattern: /^\/blog(\/)?$/, destination: '/en/blog' },
     { pattern: /^\/blog\/([^\/]+)(\/)?$/, destination: '/en/blog/$1' },
+	{ pattern: /^\/portfolio(\/)?$/, destination: '/en/portfolio' },
     // 可以根据需要添加更多的重写规则
 ];
 
