@@ -217,56 +217,9 @@ execution, providing guidance and collaboration every step of the journey.
 					</div>
 				</motion.div>
 			</section>
-			<section className='relative'>
-				<motion.div
-					initial={{ opacity: 0, y: 50 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{
-						duration: 0.5,
-					}}
-				>
-					<div className='relative z-10 flex flex-col gap-5 items-start md:items-center mb-10 mx-auto'>
-						<h3 className='font-bold text-3xl md:text-5xl bg-gradient-to-r from-base-content from-50% to-[#9c9c9c] md:text-center bg-clip-text text-transparent !leading-[1.25em]'>
-							{dict.Testimonial.h3}
-						</h3>
 
-						<h4 className='w-full text-xl md:text-2xl text-base-content/80 md:text-center'>
-							{dict.Testimonial.description1}
-							<a
-								title='feedback'
-								className='text-primary'
-								href='#'
-							>
-								{dict.Testimonial.description2}
-							</a>
-							{dict.Testimonial.description3}
-						</h4>
-					</div>
-				</motion.div>
-				<motion.div
-					initial={{ opacity: 0, y: 50 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{
-						duration: 0.5,
-					}}
-				>
-					<div className='relative z-10 w-full columns-1 md:columns-4 gap-5'>
-						{list.map((item, index) => {
-							return (
-								<TestimonialCard
-									key={index}
-									testimonialItem={item}
-									langName={langName}
-								/>
-							);
-						})}
-					</div>
-				</motion.div>
 
-				<div className='hidden md:block absolute right-[70%] top-[40%] z-0'>
-					<div className='absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,theme(colors.primary/15%),rgba(255,255,255,0))]'></div>
-				</div>
-			</section>
+			
 
 			<Cta
 				locale={dict.CTA}
