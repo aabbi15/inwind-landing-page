@@ -77,7 +77,8 @@ export default function Portfolio() {
                     {filteredImages.map(image => (
 
                         <div>
-                            <MyModal/>
+                            {/* <MyModal/> */}
+
                         <motion.div
                             key={image.id} // Use unique id for key
                             initial={{ opacity: 0, scale: 0.5 }}
@@ -85,6 +86,7 @@ export default function Portfolio() {
                             exit={{ opacity: 0, scale: 0.5 }}
                             transition={{ duration: 0.5, ease: "easeInOut",type: 'spring', stiffness: 50, damping: 10 }}
                             className="relative h-96 w-full"
+                            whileHover={{}}
                         >
                             {/* <MyModal/> */}
                             <Image

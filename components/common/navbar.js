@@ -44,7 +44,7 @@ export default function Navbar() {
 					alt='logo'
 				></Image>
 				<div className='flex flex-col text-base-content/80'>
-				<h2 className='ml-3 font-bold leading-5'>EXPO ESSENTIALS</h2>
+				<h2 className='ml-3 font-bold text-[22px] leading-5'>EXPO ESSENTIALS</h2>
 				<p className='ml-3 text-xs'>BOOTH CONSTRUCTION</p>
 				</div>
 			</a>
