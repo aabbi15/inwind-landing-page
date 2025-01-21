@@ -59,16 +59,16 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fff
 
 /* From Uiverse.io by himanshu9682 */ 
 .type--A {
-  --line_color: #555555;
+  --line_color: #fde047 ;
   --back_color: #ffbfe1;
 }
 .type--B {
-  --line_color: #1b1919;
+  --line_color: #fde047 ;
   --back_color: #bec6ff;
 }
 .type--C {
-  --line_color: #00135c;
-  --back_color: #5cffe6;
+  --line_color: #fde047 ;
+  --back_color: rgb(83, 9, 255);
 }
 .buttonmy {
   position: relative;

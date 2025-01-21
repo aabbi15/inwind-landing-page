@@ -25,20 +25,46 @@ export default function Example() {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
 
-    // Validate form data if needed
+    
+    e.preventDefault();
+    
+    console.log("hellohi");
     if (!formData.email || !formData.message) {
       alert("Email and Message are required.");
       return;
     }
-
-    console.log("Form Data Submitted: ", formData);
-
-    // Data is now ready to be sent via nodemailer
-    // Example: You can send this data to an API endpoint that uses nodemailer
+  
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        alert("Your message has been sent successfully!");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          company: "",
+          email: "",
+          phoneNumber: "",
+          message: "",
+        });
+      } else {
+        const data = await response.json();
+        alert(`Failed to send message: ${data.message}`);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("An error occurred while sending your message. Please try again later.");
+    }
   };
+  
 
   return (
     <div className="honeybg isolate px6 py-24 sm:py-22 lg:px8">
@@ -65,142 +91,10 @@ export default function Example() {
         </h2>
       </motion.div>
 
-      <form
-        onSubmit={handleSubmit}
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
-      >
-        <div className="grid grid-cols-1 gap-x-4 gap-y-2 sm:grid-cols-2">
-          <div>
-            <label htmlFor="firstName" className="block text-sm/6 font-semibold text-gray-900">
-              First name
-            </label>
-            <div className="mt-1">
-              <input
-                id="firstName"
-                name="firstName"
-                type="text"
-                placeholder="John"
-                value={formData.firstName}
-                onChange={handleInputChange}
-                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
-              />
-            </div>
-          </div>
+      <div className=" px-8 md:px-24 py-12 mb-10 grid grid-cols-1 gap-12 mt-24 md:grid-cols-2 bg-blue-950 text-white">
 
-          <div>
-            <label htmlFor="lastName" className="block text-sm/6 font-semibold text-gray-900">
-              Last name
-            </label>
-            <div className="mt-1">
-              <input
-                id="lastName"
-                name="lastName"
-                type="text"
-                placeholder="Smith"
-                value={formData.lastName}
-                onChange={handleInputChange}
-                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="company" className="block text-sm/6 font-semibold text-gray-900">
-              Company
-            </label>
-            <div className="mt-1">
-              <input
-                id="company"
-                name="company"
-                type="text"
-                placeholder="Smith & Co."
-                value={formData.company}
-                onChange={handleInputChange}
-                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="email" className="block text-sm/6 font-semibold text-gray-900">
-              Email
-            </label>
-            <div className="mt-1">
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="example@email.com"
-                value={formData.email}
-                onChange={handleInputChange}
-                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
-              />
-            </div>
-          </div>
-
-          <div className="sm:col-span-2">
-            <label htmlFor="phoneNumber" className="block text-sm/6 font-semibold text-gray-900">
-              Phone number
-            </label>
-            <div className="mt-1">
-              <input
-                id="phoneNumber"
-                name="phoneNumber"
-                type="text"
-                placeholder="+91-9824057689"
-                value={formData.phoneNumber}
-                onChange={handleInputChange}
-                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
-              />
-            </div>
-          </div>
-
-          <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm/6 font-semibold text-gray-900">
-              Message
-            </label>
-            <div className="mt-1">
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                placeholder="Your proposal here..."
-                value={formData.message}
-                onChange={handleInputChange}
-                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
-              />
-            </div>
-          </div>
-
-          <Field className="flex gap-x-4 sm:col-span-2">
-            <div className="flex h-6 items-center">
-              <Switch
-                checked={agreed}
-                onChange={setAgreed}
-                className="group flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 data-[checked]:bg-indigo-600"
-              >
-                <span className="sr-only">Agree to policies</span>
-                <span className="size-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out group-data-[checked]:translate-x-3.5" />
-              </Switch>
-            </div>
-            <Label className="text-sm/6 text-gray-600">
-              By selecting this, you agree to our{' '}
-              <a href="#" className="font-semibold text-indigo-600">
-                privacy&nbsp;policy
-              </a>
-              .
-            </Label>
-          </Field>
-        </div>
-        <div className="-mt-24">
-          <MyButton type="submit">Submit</MyButton>
-        </div>
-      </form>
-
-      <div id="section2" className="px-10 py-12 mb-10 bg-blue-950 text-white">
-<div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
-    <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
-        <div>
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1">
+        <div className="">
             <span className="inline-block p-3 text-yellow-300 rounded-full bg-blue-100/50">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +102,7 @@ export default function Example() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-5 h-5"
+                    className="w-7 h-7"
                 >
                     <path
                         strokeLinecap="round"
@@ -218,9 +112,9 @@ export default function Example() {
                 </svg>
             </span>
 
-            <h2 className="mt-4 text-base font-medium text-white">Email</h2>
-            <p className="mt-2 text-sm text-gray-100">Our friendly team is here to help.</p>
-            <p className="mt-2 text-sm text-yellow-300">hello@merakiui.com</p>
+            <h2 className="mt-4 text-xl font-medium text-white">Email</h2>
+            <p className="mt-2 text-lg text-gray-100">Our friendly team is here to help.</p>
+            <p className="mt-2 text-lg text-yellow-300">hello@merakiui.com</p>
         </div>
 
         <div>
@@ -231,7 +125,7 @@ export default function Example() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-5 h-5"
+                    className="w-7 h-7"
                 >
                     <path
                         strokeLinecap="round"
@@ -246,9 +140,9 @@ export default function Example() {
                 </svg>
             </span>
 
-            <h2 className="mt-4 text-base font-medium text-white">Office</h2>
-            <p className="mt-2 text-sm text-gray-100">Come say hello at our office HQ.</p>
-            <p className="mt-2 text-sm text-yellow-300">100 Smith Street Collingwood VIC 3066 AU</p>
+            <h2 className="mt-4 text-xl font-medium text-white">Office</h2>
+            <p className="mt-2 text-lg text-gray-100">Come say hello at our office HQ.</p>
+            <p className="mt-2 text-lg text-yellow-300">100 Smith Street Collingwood VIC 3066 AU</p>
         </div>
 
         <div>
@@ -259,7 +153,7 @@ export default function Example() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-5 h-5"
+                    className="w-7 h-7"
                 >
                     <path
                         strokeLinecap="round"
@@ -269,28 +163,140 @@ export default function Example() {
                 </svg>
             </span>
 
-            <h2 className="mt-4 text-base font-medium text-white">Phone</h2>
-            <p className="mt-2 text-sm text-gray-100">Mon-Fri from 8am to 5pm.</p>
-            <p className="mt-2 text-sm text-yellow-300">+1 (555) 000-0000</p>
+            <h2 className="mt-4 text-xl font-medium text-white">Phone</h2>
+            <p className="mt-2 text-lg text-gray-100">Mon-Fri from 8am to 5pm.</p>
+            <p className="mt-2 text-lg text-yellow-300">+1 (555) 000-0000</p>
         </div>
+
+        
     </div>
 
-    <div className="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto">
-        <iframe
-            width="100%"
-            height="100%"
-            frameBorder="0"
-            title="map"
-            marginHeight="0"
-            marginWidth="0"
-            scrolling="no"
-            src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-        ></iframe>
-    </div>
-</div>
-</div>
 
-        <Cta/>
+        <div>
+      <form
+        onSubmit={handleSubmit}
+        className="mx-auto mt-16 max-w-xl sm:mt-20"
+      >
+        <div className="grid grid-cols-1 gap-x-4 gap-y-2 sm:grid-cols-2">
+          <div>
+            <label htmlFor="firstName" className="block text-sm/6 font-semibold text-gray-100">
+              First name
+            </label>
+            <div className="mt-1">
+              <input
+                id="firstName"
+                name="firstName"
+                type="text"
+                placeholder="John"
+                value={formData.firstName}
+                onChange={handleInputChange}
+                className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label htmlFor="lastName" className="block text-sm/6 font-semibold text-gray-100">
+              Last name
+            </label>
+            <div className="mt-1">
+              <input
+                id="lastName"
+                name="lastName"
+                type="text"
+                placeholder="Smith"
+                value={formData.lastName}
+                onChange={handleInputChange}
+                className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label htmlFor="company" className="block text-sm/6 font-semibold text-gray-100">
+              Company
+            </label>
+            <div className="mt-1">
+              <input
+                id="company"
+                name="company"
+                type="text"
+                placeholder="Smith & Co."
+                value={formData.company}
+                onChange={handleInputChange}
+                className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label htmlFor="email" className="block text-sm/6 font-semibold text-gray-100">
+              Email
+            </label>
+            <div className="mt-1">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="example@email.com"
+                value={formData.email}
+                onChange={handleInputChange}
+                className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+              />
+            </div>
+          </div>
+
+          <div className="sm:col-span-2">
+            <label htmlFor="phoneNumber" className="block text-sm/6 font-semibold text-gray-100">
+              Phone number
+            </label>
+            <div className="mt-1">
+              <input
+                id="phoneNumber"
+                name="phoneNumber"
+                type="text"
+                placeholder="+91-9824057689"
+                value={formData.phoneNumber}
+                onChange={handleInputChange}
+                className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+              />
+            </div>
+          </div>
+
+          <div className="sm:col-span-2">
+            <label htmlFor="message" className="block text-sm/6 font-semibold text-gray-100">
+              Message
+            </label>
+            <div className="mt-1">
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                placeholder="Your proposal here..."
+                value={formData.message}
+                onChange={handleInputChange}
+                className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+              />
+            </div>
+          </div>
+
+          
+        </div>
+        <div className="-mt-24">
+          <MyButton type="submit">Submit</MyButton>
+        </div>
+      </form>
+
+      </div>
+
+
+      </div>
+
+
+
+   
+
+       
     </div>
   );
 }

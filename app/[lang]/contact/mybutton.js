@@ -5,13 +5,13 @@ const MyButton = () => {
   return (
     /* From Uiverse.io by himanshu9682 */ 
 <div className="z-50 containermy">
-  <a href="#" class="buttonmy type--C">
+  <button type='submit' class="buttonmy type--C">
     <div class="buttonmy__line"></div>
     <div class="buttonmy__line"></div>
     <span class="buttonmy__text">LET'S TALK </span>
     <div class="buttonmy__drow1"></div>
     <div class="buttonmy__drow2"></div>
-  </a>
+  </button>
 </div>
 
   );
@@ -27,7 +27,7 @@ const StyledWrapper = styled.div`
     --back_color: #e9ecff;
   }
   .type--C {
-    --line_color: #00135c;
+    --line_color: #fde047;
     --back_color: #defffa;
   }
   .button {
