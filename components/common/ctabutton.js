@@ -4,9 +4,11 @@ import styled from 'styled-components';
 const CTAButton = () => {
   return (
     <StyledWrapper>
-      <button>
+      <a href="/contact">
+      <button >
         <span>BOOK A CALL</span>
       </button>
+      </a>
     </StyledWrapper>
   );
 }

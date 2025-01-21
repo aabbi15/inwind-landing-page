@@ -23,24 +23,36 @@ export default function Footer() {
 	}, [pathname, langName]);
 
 	return (
+		<div>
+			{/* <img 
+						
+						src={'/footer-image.png'}
+						className='w-full h-24'
+						alt='logo'
+						/>	 */}
+		
 		<footer className='w-full px-5 py-10 bg-[#202020] text-[#f7f7f7] '>
 			<div className='container mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-2 text-sm'>
 				<div className='flex flex-col items-center md:items-start'>
+					
 					<a
-						aria-label='landing page template'
-						className='flex items-center mb-3'
-						title='landing page template'
-						href={`/${langName}`}
-					>
-						<Image
-							width={200}
-							height={200}
-							src={'/logo.gif'}
-							className='transition-all hover:scale-110 w-6 md:w-10 h-6 md:h-10'
-							alt='logo'
-						></Image>
-						<h2 className='ml-3 font-bold leading-5'>Landing Page</h2>
-					</a>
+									aria-label='landing page template'
+									className='flex items-center w-1/2 '
+									title='landing page template'
+									href={`/${langName}`}
+								>
+									<Image
+										width={200}
+										height={200}
+										src={'/onlylogo.png'}
+										className='rotator transition-all hover:scale-110 w-6 md:w-10 h-6 md:h-10'
+										alt='logo'
+									></Image>
+									<div className='flex flex-col text-white'>
+									<h2 className='ml-3 font-bold text-[22px] leading-5'>EXPO ESSENTIALS</h2>
+									<p className='ml-3 text-xs'>BOOTH CONSTRUCTION</p>
+									</div>
+								</a>
 					<div className='flex flex-wrap justify-center gap-x-2 md:gap-x-5 gap-y-1'>
 						{linkList.map((link, index) => {
 							return (
@@ -69,5 +81,6 @@ export default function Footer() {
 				</p>
 			</div>
 		</footer>
+		</div>
 	);
 }

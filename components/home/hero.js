@@ -6,6 +6,8 @@ import { SiGithub } from 'react-icons/si';
 import { IoDocumentText } from 'react-icons/io5';
 
 import { useEffect, useState } from 'react';
+import { BsPhoneFill } from 'react-icons/bs';
+import CTAButton from '../common/ctabutton';
 export default function Hero({ locale, CTALocale }) {
 	const [tilt, setTilt] = useState(45);
 	const [duration, setDuration] = useState(0.8);
@@ -66,21 +68,27 @@ export default function Hero({ locale, CTALocale }) {
 						{/* <HeroIcons /> */}
 
 						<div className='flex flex-col md:flex-row gap-2'>
-							<a
+							{/* <a
 								title='get source code'
-								className='btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full'
+								className='btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-3xl text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full'
 								href='https://github.com/huglemon/inwind-landing-page'
 							>
 								<SiGithub />
+								<BsPhoneFill/>
 								{CTALocale.btn1}
-							</a>
-							<a
+								Book a Call
+							</a> */}
+							<CTAButton/>
+							{/* <a
 								title='get source code'
-								className='btn btn-sm md:btn-md btn-base rounded-full'
+								className='btn btn-sm md:btn-md btn-base text-xl rounded-full'
 								href='https://huglemon.com/blog/i-open-sourced-a-saas-landing-page'
 							>
-								<IoDocumentText /> {CTALocale.btn2}
-							</a>
+								<IoDocumentText /> 
+								{/* {CTALocale.btn2} 
+
+								Book a Call
+							</a> */}
 						</div>
 					</div>
 				</motion.div>

@@ -40,7 +40,7 @@ export default function Navbar() {
 					width={200}
 					height={200}
 					src={'/onlylogo.png'}
-					className='rotator transition-all hover:scale-110 w-6 md:w-10 h-6 md:h-10'
+					className='rotator transition-all hover:scale-110 w-6 md:w-14 h-6 md:h-14'
 					alt='logo'
 				></Image>
 				<div className='flex flex-col text-base-content/80'>
