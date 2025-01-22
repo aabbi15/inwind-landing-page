@@ -302,7 +302,7 @@ effectively!
                             </div>
                             <div className='w-full md:w-1/2 relative rounded-2xl overflow-hidden shadow-xl'>
                                 <Image
-                                    src={'/example-expo.jpg'}
+                                    src={'/about1.png'}
                                     layout='fill'
                                     objectFit='cover'
                                     className='hover:scale-105 transition-all'
@@ -359,7 +359,7 @@ effectively!
                         <div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
                             <div className='w-full md:w-5/12 relative rounded-2xl overflow-hidden shadow-xl'>
                                 <Image
-                                    src={'/hero2.jpg'}
+                                    src={'/service2.png'}
                                     layout='fill'
                                     objectFit='cover'
                                     className='hover:scale-105 transition-all'
@@ -415,7 +415,7 @@ quality woods and other premium materials. We can then deliver your finished pro
                             </div>
                             <div className='w-full md:w-5/12 relative rounded-2xl overflow-hidden shadow-xl'>
                                 <Image
-                                    src={'/example-expo.jpg'}
+                                    src={'/service22.png'}
                                     layout='fill'
                                     objectFit='cover'
                                     className='hover:scale-105 transition-all'
@@ -508,7 +508,7 @@ setup, you&apos;ll save valuable time, allowing you to focus on perfecting your 
                         <div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
                             <div className='w-full md:w-6/12 relative rounded-2xl overflow-hidden shadow-xl'>
                                 <Image
-                                    src={'/hero2.jpg'}
+                                    src={'/service3a.png'}
                                     layout='fill'
                                     objectFit='cover'
                                     className='hover:scale-105 transition-all'
@@ -552,7 +552,7 @@ impression of your brand, we&apos;ll help you with one of our high quality displ
                             </div>
                             <div className='w-full md:w-6/12 relative rounded-2xl overflow-hidden shadow-xl'>
                                 <Image
-                                    src={'/example-expo.jpg'}
+                                    src={'/service3b.png'}
                                     layout='fill'
                                     objectFit='cover'
                                     className='hover:scale-105 transition-all'
@@ -602,7 +602,7 @@ setup, you&apos;ll save valuable time, allowing you to focus on perfecting your 
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/carpentar.png"
+                                    src="/work1.png"
                                     alt="Example"
                                     layout='fill'
                                     objectFit='cover'
@@ -615,7 +615,7 @@ setup, you&apos;ll save valuable time, allowing you to focus on perfecting your 
                             <div
                                 className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                             >
-                                <p>A visual rendering of a pop-up exhibition stand</p>
+                                <p>A tool used for cutting wood.</p>
                             </div>
                         </div>
 
@@ -627,7 +627,7 @@ setup, you&apos;ll save valuable time, allowing you to focus on perfecting your 
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/carpentar.png"
+                                    src="/work2.png"
                                     alt="Example"
                                     layout='fill'
                                     objectFit='cover'
@@ -640,7 +640,7 @@ setup, you&apos;ll save valuable time, allowing you to focus on perfecting your 
                             <div
                                 className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                             >
-                                <p>We delivered a striking but simple design for this client</p>
+                                <p>Plinth building process</p>
                             </div>
                         </div>
 
@@ -717,7 +717,7 @@ eliminating the need for extra manpower or additional expenses!
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/modular1.png"
+                                    src="/small1.png"
                                     alt="Example"
                                     layout='fill'
                                     objectFit='cover'
@@ -742,7 +742,7 @@ eliminating the need for extra manpower or additional expenses!
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/modular2.png"
+                                    src="/small2.png"
                                     alt="Example"
                                     layout='fill'
                                     objectFit='cover'
