@@ -106,6 +106,7 @@ export default function Page({ params }) {
 				</div>
 			</section>
 			<section className='flex flex-col gap-y-10 mb-32'>
+
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
 					animate={{ opacity: 1, y: 0 }}
@@ -114,7 +115,7 @@ export default function Page({ params }) {
 					<div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
 						<div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
 							<Image
-								src={'/hero2.jpg'}
+								src={'/about3.png'}
 								layout='fill'
 								objectFit='cover'
 								className='hover:scale-105 transition-all'
@@ -144,6 +145,7 @@ challenging concepts we often pursue and above all we never give up.
 						</div>
 					</div>
 				</motion.div>
+				
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
 					animate={{ opacity: 1, y: 0 }}
@@ -169,7 +171,7 @@ bring your vision to life.
 						</div>
 						<div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
 							<Image
-								src={'/example-expo.jpg'}
+								src={'/about2.png'}
 								layout='fill'
 								objectFit='cover'
 								className='hover:scale-105 transition-all'
@@ -187,7 +189,7 @@ bring your vision to life.
 					<div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
 						<div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
 							<Image
-								src={'/hero2.jpg'}
+								src={'/about1.png'}
 								layout='fill'
 								objectFit='cover'
 								className='hover:scale-105 transition-all'
