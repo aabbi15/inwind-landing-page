@@ -247,7 +247,7 @@ export default function Page({ params }) {
                         <div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
                             <div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
                                 <Image
-                                    src={'/hero2.jpg'}
+                                    src={'/guidea.png'}
                                     layout='fill'
                                     objectFit='cover'
                                     className='hover:scale-105 transition-all'
@@ -307,7 +307,7 @@ export default function Page({ params }) {
                             </div>
                             <div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
                                 <Image
-                                    src={'/example-expo.jpg'}
+                                    src={'/guidec.png'}
                                     layout='fill'
                                     objectFit='cover'
                                     className='hover:scale-105 transition-all'
@@ -317,58 +317,7 @@ export default function Page({ params }) {
                         </div>
                     </motion.div>
 
-                    <div className='grid my-10  gap-5 md:grid-cols-2 grid-cols-1'>
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
-
-                            <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <Image
-                                    src="/modular1.png"
-                                    alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                            >
-                                <p>This is an amazing example of modular stand.</p>
-                            </div>
-                        </div>
-
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
-
-                            <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <Image
-                                    src="/modular2.png"
-                                    alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                            >
-                                <p>We delivered a striking but simple design for this client</p>
-                            </div>
-                        </div>
-
-                    </div>
+                    
 
                 </div>
 
@@ -442,7 +391,7 @@ streamline your setup, and focus on what truly matters—exhibiting!
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/modular1.png"
+                                    src="/guided.png"
                                     alt="Example"
                                     layout='fill'
                                     objectFit='cover'
@@ -467,7 +416,7 @@ streamline your setup, and focus on what truly matters—exhibiting!
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/modular2.png"
+                                    src="/guidee.png"
                                     alt="Example"
                                     layout='fill'
                                     objectFit='cover'
@@ -552,58 +501,7 @@ brand and services after having an engaging experience.
 
                   
 
-                    <div className='grid my-10  gap-5 md:grid-cols-2 grid-cols-1'>
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
-
-                            <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <Image
-                                    src="/modular1.png"
-                                    alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                            >
-                                <p>A visual rendering of a pop-up exhibition stand</p>
-                            </div>
-                        </div>
-
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
-
-                            <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <Image
-                                    src="/modular2.png"
-                                    alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                            >
-                                <p>We delivered a striking but simple design for this client</p>
-                            </div>
-                        </div>
-
-                    </div>
+                   
 
                 </div>
 
@@ -703,7 +601,7 @@ perfectly fits your brand!
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/modular1.png"
+                                    src="/guidef.png"
                                     alt="Example"
                                     layout='fill'
                                     objectFit='cover'
@@ -728,7 +626,7 @@ perfectly fits your brand!
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/modular2.png"
+                                    src="/guideg.png"
                                     alt="Example"
                                     layout='fill'
                                     objectFit='cover'
@@ -825,58 +723,7 @@ ensures your stand stands out in a sea of uninspired displays.
 
 
                   
-      <div className='grid my-10  gap-5 md:grid-cols-2 grid-cols-1'>
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
-
-                            <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <Image
-                                    src="/modular1.png"
-                                    alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                            >
-                                <p>A visual rendering of a pop-up exhibition stand</p>
-                            </div>
-                        </div>
-
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
-
-                            <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <Image
-                                    src="/modular2.png"
-                                    alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                            >
-                                <p>We delivered a striking but simple design for this client</p>
-                            </div>
-                        </div>
-
-                    </div>
+ 
                     
 
 
@@ -954,7 +801,7 @@ to interact with exhibitors directly, not to read long paragraphs!
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/modular1.png"
+                                    src="/guideh.png"
                                     alt="Example"
                                     layout='fill'
                                     objectFit='cover'
@@ -979,7 +826,7 @@ to interact with exhibitors directly, not to read long paragraphs!
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/modular2.png"
+                                    src="/guidec.png"
                                     alt="Example"
                                     layout='fill'
                                     objectFit='cover'
@@ -1062,58 +909,7 @@ below to find the materials that best suit your brands.
 
                   
 
-                    <div className='grid my-10  gap-5 md:grid-cols-2 grid-cols-1'>
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
-
-                            <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <Image
-                                    src="/modular1.png"
-                                    alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                            >
-                                <p>A visual rendering of a pop-up exhibition stand</p>
-                            </div>
-                        </div>
-
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
-
-                            <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <Image
-                                    src="/modular2.png"
-                                    alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                            >
-                                <p>We delivered a striking but simple design for this client</p>
-                            </div>
-                        </div>
-
-                    </div>
+                  
 
                 </div>
 
