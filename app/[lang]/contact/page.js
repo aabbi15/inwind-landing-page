@@ -37,7 +37,7 @@ export default function Example() {
     }
   
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/api/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -283,7 +283,15 @@ export default function Example() {
           
         </div>
         <div className="-mt-12">
-          <MyButton type="submit">Submit</MyButton>
+        <div className="z-50 containermy">
+  <button type='submit' class="buttonmy type--C">
+    <div class="buttonmy__line"></div>
+    <div class="buttonmy__line"></div>
+    <span class="buttonmy__text">LET'S TALK </span>
+    <div class="buttonmy__drow1"></div>
+    <div class="buttonmy__drow2"></div>
+  </button>
+</div>
         </div>
       </form>
 

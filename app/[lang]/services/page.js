@@ -780,7 +780,7 @@ eliminating the need for extra manpower or additional expenses!
 >
     <h1 className='font-bold pb-10 text-2xl md:text-4xl bg-gradient-to-r  from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] '>
         {/* {dict.About.h1} */}
-        1. BESPOKE EXHIBITION STANDS 
+        5. OUR GUIDE
 
     </h1>
 </motion.div>
@@ -789,27 +789,7 @@ eliminating the need for extra manpower or additional expenses!
             
                 
     
-                <div className='relative z-10 w-full md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-5'>
-                    {mylist.map((item, index) => {
-                        return (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{
-                                    duration: 0.5,
-                                }}
-                            >
-                                <FeatureCard featureItem={item} />
-                            </motion.div>
-                        );
-                    })}
-                </div>
-{/* 						
-                <div className='hidden md:block absolute left-[20%] top-[10%] z-0'>
-                    <div className='absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]'></div>
-                </div> */}
-            
+
     
     
 <motion.div
@@ -818,71 +798,32 @@ eliminating the need for extra manpower or additional expenses!
     transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
     className='my-10'
 >
-    <div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
-        <div className='w-full md:w-6/12 relative rounded-2xl overflow-hidden shadow-xl'>
-            <Image
-                src={'/hero2.jpg'}
-                layout='fill'
-                objectFit='cover'
-                className='hover:scale-105 transition-all'
-                alt='about_1'
-            />
-        </div>
-        <div className='w-full md:w-6/12 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
-            
-            <p className={`text-xl break-words ${langName === 'ar' && 'text-right'}`} >
-
-                {/* {dict.About.why_content} */}
-
-                The advantages of bespoke exhibition stands are undeniable. A striking blend of unique 
-designs and top-tier craftsmanship ensures that a custom-built exhibition stand is the ideal 
-way to showcase your business to potential customers and clients. Nothing leaves a 
-stronger first impression than a tailored exhibition stand designed to highlight your brand in 
-style!  
-            </p>
-        </div>
+    
+        <div className='flex  w-full h-[400px] justify-center items-center  relative rounded-2xl overflow-hidden shadow-xl'>
+        <Image
+  src={'/guide.png'}
+//   width={500}
+//   height={500}
+  objectFit='contain'
+  layout= 'fill'
+  className='hover:scale-105 transition-all'
+  alt='about_1'
+/>
+       
     </div>
 </motion.div>
 
 
-<motion.div
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-    className='my-10'
->
-    <div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
-        <div className='w-full md:w-1/2 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
-           
-            <p className={`text-xl break-words ${langName === 'ar' && 'text-right'}`} >
 
-                {/* {dict.About.team_content} */}
-                We are a bespoke exhibition stand company that stands out from the rest. Our experienced 
-team is with you every step of the way—from your first call to the design, construction, 
-delivery, and installation of your custom exhibition stand. No matter where you're exhibiting, 
-our tailored display stands are the ultimate solution for showcasing your brand and products 
-effectively!  
-</p>
-        </div>
-        <div className='w-full md:w-1/2 relative rounded-2xl overflow-hidden shadow-xl'>
-            <Image
-                src={'/example-expo.jpg'}
-                layout='fill'
-                objectFit='cover'
-                className='hover:scale-105 transition-all'
-                alt='about_2'
-            />
-        </div>
-    </div>
-</motion.div>
+<div className='text-center'>
+<a href='/en/guide' className='text-xl font-bold text-center text-blue-500'>
 
-<a href='/guide' className='text-xl font-bold text-center'>
-
- For inquiries, feel free to reach out to us via E-mail, WhatsApp, or give us a call.
+ Reach out to our guide to know more about how we can help you build the best booth.
  {/* <button  */}
  
  
  </a>
+ </div>
 
 </div>
 
