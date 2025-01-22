@@ -114,7 +114,7 @@ export default function Example() {
 
             <h2 className="mt-4 text-xl font-medium text-white">Email</h2>
             <p className="mt-2 text-lg text-gray-100">Our friendly team is here to help.</p>
-            <p className="mt-2 text-lg text-yellow-300">hello@merakiui.com</p>
+            <p className="mt-2 text-lg text-yellow-300"> info@expoessentials.in </p>
         </div>
 
         <div>
@@ -142,7 +142,7 @@ export default function Example() {
 
             <h2 className="mt-4 text-xl font-medium text-white">Office</h2>
             <p className="mt-2 text-lg text-gray-100">Come say hello at our office HQ.</p>
-            <p className="mt-2 text-lg text-yellow-300">100 Smith Street Collingwood VIC 3066 AU</p>
+            <p className="mt-2 text-lg text-yellow-300">A/11 Ashray Tenament, Near GEB, Petlad, Anand , Gujarat - 388450</p>
         </div>
 
         <div>
@@ -165,7 +165,7 @@ export default function Example() {
 
             <h2 className="mt-4 text-xl font-medium text-white">Phone</h2>
             <p className="mt-2 text-lg text-gray-100">Mon-Fri from 8am to 5pm.</p>
-            <p className="mt-2 text-lg text-yellow-300">+1 (555) 000-0000</p>
+            <p className="mt-2 text-lg text-yellow-300">+91-9313853583</p>
         </div>
 
         
@@ -282,7 +282,7 @@ export default function Example() {
 
           
         </div>
-        <div className="-mt-24">
+        <div className="-mt-12">
           <MyButton type="submit">Submit</MyButton>
         </div>
       </form>
