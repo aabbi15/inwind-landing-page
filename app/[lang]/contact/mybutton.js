@@ -8,7 +8,7 @@ const MyButton = () => {
   <button type='submit' class="buttonmy type--C">
     <div class="buttonmy__line"></div>
     <div class="buttonmy__line"></div>
-    <span class="buttonmy__text">LET'S TALK </span>
+    <span class="buttonmy__text">LET&apos;S TALK </span>
     <div class="buttonmy__drow1"></div>
     <div class="buttonmy__drow2"></div>
   </button>

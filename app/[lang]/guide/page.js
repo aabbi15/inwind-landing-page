@@ -302,7 +302,7 @@ export default function Page({ params }) {
                                     Modular exhibition stands offer a range of benefits, including cost efficiency, flexibility, and
                                     the ease of adapting your stand for various events. This smart approach can save you
                                     valuable time and money on future stand designs. However, opting for a fully bespoke stand
-                                    can give your business that extra "wow" factor to stand out in a crowded event!
+                                    can give your business that extra &quot;wow&quot; factor to stand out in a crowded event!
                                 </p>
                             </div>
                             <div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
@@ -368,7 +368,7 @@ export default function Page({ params }) {
                                     {/* {dict.About.why_content} */}
 
                                     Whatever you call them—foldable, collapsible, or pop-up displays—these innovative 
-solutions elevate ease of installation to a whole new level, especially when you're short on 
+solutions elevate ease of installation to a whole new level, especially when you&apos;re short on 
 exhibition stand ideas! With their compact design, these stands are incredibly portable, 
 requiring minimal space for transport, quick installation, and effortless takedown when the 
 event wraps up. Forget the hassle of multi-person specialist installation teams and embrace 
@@ -487,8 +487,8 @@ streamline your setup, and focus on what truly matters—exhibiting!
                                     One of the most overlooked yet essential elements of a successful display is interactivity. 
 Without something engaging for potential clients or customers, you risk losing their attention 
 to the competition. We believe your exhibition stand design should always focus on the 
-experience—making it interactive is the key to becoming the 'must-see' stand at any 
-exhibition or trade show. Time and again, we've seen the benefits of incorporating games, 
+experience—making it interactive is the key to becoming the &apos;must-see&apos; stand at any 
+exhibition or trade show. Time and again, we&apos;ve seen the benefits of incorporating games, 
 touchscreen displays, augmented reality, and more into your booth. By offering more than 
 just a product showcase, your interactive exhibition stand ideas are sure to stand out! Once 
 you&apos;ve captured their interest, it&apos;s smooth sailing—attendees will be much more open to your 
@@ -894,11 +894,11 @@ to interact with exhibitors directly, not to read long paragraphs!
                                     {/* {dict.About.why_content} */}
 
                                     Selecting the right materials is a crucial step in the exhibition stand design process, offering 
-plenty of options to consider! If you're aiming for a balance of natural charm and design 
+plenty of options to consider! If you&apos;re aiming for a balance of natural charm and design 
 flexibility, wood is an excellent choice for the main elements of your display. For a lightweight 
 yet striking option, acrylic makes for stunning furniture and shelving, while fabric works 
 wonderfully for tensioned displays, graphics, and banners. The materials you choose play a 
-significant role in both the aesthetics and functionality of your stand, so don't overlook this 
+significant role in both the aesthetics and functionality of your stand, so don&apos;t overlook this 
 aspect when brainstorming your exhibition ideas. Take a look at the exhibition stand images 
 below to find the materials that best suit your brands. 
                                 </p>
@@ -969,9 +969,9 @@ approachable team and a sales-focused strategy can greatly increase the likeliho
 your brand will be remembered by those who engage with you. 
 By considering all these factors when planning and designing your display, you&apos;re sure to 
 create a standout result. We understand the importance of crafting a visually striking and 
-memorable exhibition stand, and we hope the ideas we've shared have inspired you. To see 
+memorable exhibition stand, and we hope the ideas we&apos;ve shared have inspired you. To see 
 some of these tips in action, be sure to check out our gallery showcasing previous builds and 
-designs we've created.
+designs we&apos;ve created.
                                 </p>
                             </div>
                         </div>
