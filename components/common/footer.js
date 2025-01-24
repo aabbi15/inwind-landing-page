@@ -53,7 +53,7 @@ export default function Footer() {
 									<p className='ml-3 text-xs'>BOOTH CONSTRUCTION</p>
 									</div>
 								</a>
-					<div className='flex flex-wrap justify-center gap-x-2 md:gap-x-5 gap-y-1'>
+					<div className='flex flex-wrap mt-10 justify-center gap-x-2 md:gap-x-5 gap-y-1'>
 						{linkList.map((link, index) => {
 							return (
 								<a
@@ -68,17 +68,18 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<p>
-					©{' '}
+				<div className='text-xs'>
+					{' '}
 					<a
-						title={'huglemon'}
-						href='http://huglemon.com?rel=landingpage'
+						title={'Abhishek Abbi - LinkedIn'}
+						href='https://www.linkedin.com/in/abhishek-abbi/'
 						target='_blank'
 					>
-						hugLemon
-					</a>{' '}
-					present.
-				</p>
+						Created by
+					{' '}
+					@abhishek_abbi
+					</a>
+				</div>
 			</div>
 		</footer>
 		</div>
