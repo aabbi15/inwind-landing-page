@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const Button = () => {
   return (
     <StyledWrapper>
+      <a href='/en/contact'>
       <button className="button">Book a Call</button>
+      </a>
     </StyledWrapper>
   );
 }

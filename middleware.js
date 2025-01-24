@@ -11,12 +11,18 @@ const rewritePaths = [
 	{ pattern: /^\/contact(\/)?$/, destination: '/en/contact' },
 	{ pattern: /^\/guide(\/)?$/, destination: '/en/guide' },
 	{ pattern: /^\/services(\/)?$/, destination: '/en/services' },
+	{pattern: /^\/api(\/)?$/, destination:'none'}
     // 可以根据需要添加更多的重写规则
 ];
 
 export function middleware(request) {
 	const { pathname } = request.nextUrl;
 	console.log("当前路径:", pathname);  // 保留日志
+
+	if (pathname.startsWith('/api')) {
+        console.log("Skipping API call:", pathname);
+        return NextResponse.next();
+    }
 
 	const lang = reportLanguage(pathname);
 	request.headers.set('x-pathname', pathname);
@@ -29,6 +35,9 @@ export function middleware(request) {
 	for (const { pattern, destination } of rewritePaths) {
 		const match = pathname.match(pattern);
 		if (match) {
+
+			if (destination === 'none') return NextResponse.next();
+
 			console.log(`重写路径: ${pathname} -> ${destination}`);  // 添加日志
 			request.nextUrl.pathname = pathname.replace(pattern, destination);
 			return NextResponse.rewrite(request.nextUrl);

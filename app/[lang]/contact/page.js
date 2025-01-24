@@ -7,7 +7,7 @@ import MyButton from "./mybutton";
 import Cta from "@/components/home/cta";
 
 export default function Example() {
-  const [agreed, setAgreed] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -26,16 +26,16 @@ export default function Example() {
   };
 
   const handleSubmit = async (e) => {
-
-    
     e.preventDefault();
-    
-    console.log("hellohi");
+
+    // Ensure required fields are filled
     if (!formData.email || !formData.message) {
       alert("Email and Message are required.");
       return;
     }
-  
+
+    setLoading(true);
+
     try {
       const response = await fetch("/api/send", {
         method: "POST",
@@ -44,7 +44,7 @@ export default function Example() {
         },
         body: JSON.stringify(formData),
       });
-  
+
       if (response.ok) {
         alert("Your message has been sent successfully!");
         setFormData({
@@ -63,7 +63,10 @@ export default function Example() {
       console.error("Error submitting form:", error);
       alert("An error occurred while sending your message. Please try again later.");
     }
+
+    setLoading(false);
   };
+
   
 
   return (
@@ -284,13 +287,22 @@ export default function Example() {
         </div>
         <div className="-mt-12">
         <div className="z-50 containermy">
-  <button type='submit' class="buttonmy type--C">
-    <div class="buttonmy__line"></div>
-    <div class="buttonmy__line"></div>
-    <span class="buttonmy__text">LET'S TALK </span>
-    <div class="buttonmy__drow1"></div>
-    <div class="buttonmy__drow2"></div>
-  </button>
+
+          {loading ? 
+          
+            <div class="custom-loader"></div>  
+            :
+
+            <button type='submit' class="buttonmy type--C">
+            <div class="buttonmy__line"></div>
+            <div class="buttonmy__line"></div>
+            <span class="buttonmy__text">LET'S TALK </span>
+            <div class="buttonmy__drow1"></div>
+            <div class="buttonmy__drow2"></div>
+          </button>
+
+        }
+
 </div>
         </div>
       </form>

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const CTAButton = () => {
   return (
     <StyledWrapper>
-      <a href="/contact">
+      <a href="/en/contact">
       <button >
         <span>BOOK A CALL</span>
       </button>
