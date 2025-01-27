@@ -44,8 +44,8 @@ export default function Footer() {
 									<Image
 										width={200}
 										height={200}
-										src={'/onlylogo.png'}
-										className='rotator transition-all hover:scale-110 w-6 md:w-10 h-6 md:h-10'
+										src={'/onlylogowhite.png'}
+										className='rotator transition-all hover:scale-110 w-6 md:w-14 h-6 md:h-14'
 										alt='logo'
 									></Image>
 									<div className='flex flex-col text-white'>
@@ -68,16 +68,30 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<div className='text-xs'>
-					{' '}
+				<div className='text-xs text-center'>
+					
+					
+						Created by
+						<br/>
+						{' '}
+					
 					<a
 						title={'Abhishek Abbi - LinkedIn'}
 						href='https://www.linkedin.com/in/abhishek-abbi/'
 						target='_blank'
 					>
-						Created by
-					{' '}
-					@abhishek_abbi
+					Abhishek   {'    '} {' '}
+					</a>
+					
+					and  {'  '} {' '}
+					
+
+					<a
+						title={'Ritik Mahyavanshi - LinkedIn'}
+						href='https://www.linkedin.com/in/ritikmahyavanshi/'
+						target='_blank'
+					>
+						Ritik 
 					</a>
 				</div>
 			</div>

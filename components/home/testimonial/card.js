@@ -11,6 +11,7 @@ export default function TestimonialCard({ testimonialItem = {}, langName = 'en' 
                     alt='avatar'
                     width={50}
                     height={50}
+                    
                     src={testimonialItem.avatar}
                     className='object-cover'
                 />
