@@ -244,18 +244,10 @@ export default function Page({ params }) {
                         transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
                         className='my-10'
                     >
-                        <div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
-                            <div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
-                                <Image
-                                    src={'/guidea.png'}
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className='hover:scale-105 transition-all'
-                                    alt='about_1'
-                                />
-                            </div>
-                            <div className='w-full md:w-3/5 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
-                                <div className='flex items-center justify-between py-5'>
+                        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
+                           
+                            <div className='w-full md:w-10/12 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/80 shadow-xl'>
+                            <div className='flex items-center justify-between py-5'>
                                     <h2 className='text-3xl font-bold'>
 
                                         {/* {dict.About.why} */}
@@ -278,16 +270,16 @@ export default function Page({ params }) {
                         </div>
                     </motion.div>
 
-
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
                         className='my-10'
                     >
-                        <div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
-                            <div className='w-full md:w-3/5 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
-                                <div className='flex items-center justify-between py-5'>
+                        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
+                           
+                            <div className='w-full md:w-10/12 ring-2  ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/80 shadow-xl'>
+                            <div className='flex items-center justify-between py-5'>
                                     {/* <RiTeamFill size={48} /> */}
                                     <div className='text-[36px] px-5'> <MdTravelExplore /> </div>
                                     <h2 className='text-3xl font-bold'>
@@ -305,18 +297,66 @@ export default function Page({ params }) {
                                     can give your business that extra &quot;wow&quot; factor to stand out in a crowded event!
                                 </p>
                             </div>
-                            <div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
-                                <Image
-                                    src={'/guidec.png'}
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className='hover:scale-105 transition-all'
-                                    alt='about_2'
-                                />
-                            </div>
+                         
                         </div>
                     </motion.div>
 
+
+
+
+                    <div className='grid my-10 md:mx-20 gap-5 md:grid-cols-1 grid-cols-1'>
+                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
+                            <motion.div
+                                className="w-full  group-hover:scale-105 transition-transform duration-300"
+                            >
+                                <Image
+                                    src="/guidea.png"
+                                    alt="Example"
+                                    layout="responsive"
+                                    width={700} // Use actual dimensions or responsive layout
+                                    height={400} // Use actual dimensions or responsive layout
+                                    objectFit="contain"
+                                    className="w-full h-auto"
+                                />
+                            </motion.div>
+
+                            {/* Hover Text */}
+                            <div
+                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
+                            >
+                                <p>This is how a modern exhibition stand looks like.</p>
+                            </div>
+                        </div>
+
+
+                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
+                            <motion.div
+                                className="w-full  group-hover:scale-105 transition-transform duration-300"
+                            >
+                                <Image
+                                    src="/guidec.png"
+                                    alt="Example"
+                                    layout="responsive"
+                                    width={700} // Use actual dimensions or responsive layout
+                                    height={400} // Use actual dimensions or responsive layout
+                                    objectFit="contain"
+                                    className="w-full h-auto"
+                                />
+                            </motion.div>
+
+                            {/* Hover Text */}
+                            <div
+                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
+                            >
+                                <p>Example of a wooden exhibition stand.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                 
+
+                  
                     
 
                 </div>
@@ -382,54 +422,51 @@ streamline your setup, and focus on what truly matters—exhibiting!
 
                   
 
-                    <div className='grid my-10  gap-5 md:grid-cols-2 grid-cols-1'>
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
-
+                    <div className='grid my-10 md:mx-20 gap-5 md:grid-cols-1 grid-cols-1'>
+                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
                             <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
+                                className="w-full  group-hover:scale-105 transition-transform duration-300"
                             >
                                 <Image
                                     src="/guided.png"
                                     alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
+                                    layout="responsive"
+                                    width={700} // Use actual dimensions or responsive layout
+                                    height={400} // Use actual dimensions or responsive layout
+                                    objectFit="contain"
+                                    className="w-full h-auto"
                                 />
                             </motion.div>
 
                             {/* Hover Text */}
                             <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>A visual rendering of a pop-up exhibition stand</p>
+                                <p>This is how a modern exhibition stand looks like.</p>
                             </div>
                         </div>
 
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
 
+                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
                             <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
+                                className="w-full  group-hover:scale-105 transition-transform duration-300"
                             >
                                 <Image
                                     src="/guidee.png"
                                     alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
+                                    layout="responsive"
+                                    width={700} // Use actual dimensions or responsive layout
+                                    height={400} // Use actual dimensions or responsive layout
+                                    objectFit="contain"
+                                    className="w-full h-auto"
                                 />
                             </motion.div>
 
                             {/* Hover Text */}
                             <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>We delivered a striking but simple design for this client</p>
+                                <p>Example of a wooden exhibition stand.</p>
                             </div>
                         </div>
 
@@ -568,78 +605,74 @@ perfectly fits your brand!
 
                   
 
-                    <div className='grid my-10  gap-5 md:grid-cols-2 grid-cols-1'>
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
-
+                    <div className='grid my-10 md:mx-20 gap-5 md:grid-cols-1 grid-cols-1'>
+                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
                             <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
+                                className="w-full  group-hover:scale-105 transition-transform duration-300"
                             >
                                 <Image
                                     src="/modular1.png"
                                     alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
+                                    layout="responsive"
+                                    width={700} // Use actual dimensions or responsive layout
+                                    height={400} // Use actual dimensions or responsive layout
+                                    objectFit="contain"
+                                    className="w-full h-auto"
                                 />
                             </motion.div>
 
                             {/* Hover Text */}
                             <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>A visual rendering of a pop-up exhibition stand</p>
+                                <p>This is how a modern exhibition stand looks like.</p>
                             </div>
                         </div>
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
 
+                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
                             <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
+                                className="w-full  group-hover:scale-105 transition-transform duration-300"
                             >
                                 <Image
                                     src="/guidef.png"
                                     alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
+                                    layout="responsive"
+                                    width={700} // Use actual dimensions or responsive layout
+                                    height={400} // Use actual dimensions or responsive layout
+                                    objectFit="contain"
+                                    className="w-full h-auto"
                                 />
                             </motion.div>
 
                             {/* Hover Text */}
                             <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>A visual rendering of a pop-up exhibition stand</p>
+                                <p>This is how a modern exhibition stand looks like.</p>
                             </div>
                         </div>
 
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
 
+                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
                             <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
+                                className="w-full  group-hover:scale-105 transition-transform duration-300"
                             >
                                 <Image
                                     src="/guideg.png"
                                     alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
+                                    layout="responsive"
+                                    width={700} // Use actual dimensions or responsive layout
+                                    height={400} // Use actual dimensions or responsive layout
+                                    objectFit="contain"
+                                    className="w-full h-auto"
                                 />
                             </motion.div>
 
                             {/* Hover Text */}
                             <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>We delivered a striking but simple design for this client</p>
+                                <p>Example of a wooden exhibition stand.</p>
                             </div>
                         </div>
 
@@ -792,54 +825,51 @@ to interact with exhibitors directly, not to read long paragraphs!
 
                   
 
-                    <div className='grid my-10  gap-5 md:grid-cols-2 grid-cols-1'>
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
-
+                    <div className='grid my-10 md:mx-20 gap-5 md:grid-cols-1 grid-cols-1'>
+                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
                             <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
+                                className="w-full  group-hover:scale-105 transition-transform duration-300"
                             >
                                 <Image
                                     src="/guideh.png"
                                     alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
+                                    layout="responsive"
+                                    width={700} // Use actual dimensions or responsive layout
+                                    height={400} // Use actual dimensions or responsive layout
+                                    objectFit="contain"
+                                    className="w-full h-auto"
                                 />
                             </motion.div>
 
                             {/* Hover Text */}
                             <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>A visual rendering of a pop-up exhibition stand</p>
+                                <p>This is how a modern exhibition stand looks like.</p>
                             </div>
                         </div>
 
-                        <div className=" relative h-[400px] overflow-hidden rounded-lg shadow-lg group transition-all duration-300 ease-in-out">
 
+                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
                             <motion.div
-                                className="absolute inset-0"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
+                                className="w-full  group-hover:scale-105 transition-transform duration-300"
                             >
                                 <Image
-                                    src="/guidec.png"
+                                    src="/white.png"
                                     alt="Example"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className="w-full h-[400px] object-cover"
-
+                                    layout="responsive"
+                                    width={700} // Use actual dimensions or responsive layout
+                                    height={400} // Use actual dimensions or responsive layout
+                                    objectFit="contain"
+                                    className="w-full h-auto"
                                 />
                             </motion.div>
 
                             {/* Hover Text */}
                             <div
-                                className="absolute inset-x-0 bottom-0 flex items-center justify-center bg-black/40 bg-opacity-70 text-white text-lg font-bold p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>We delivered a striking but simple design for this client</p>
+                                <p>Example of a wooden exhibition stand.</p>
                             </div>
                         </div>
 
@@ -969,9 +999,7 @@ approachable team and a sales-focused strategy can greatly increase the likeliho
 your brand will be remembered by those who engage with you. 
 By considering all these factors when planning and designing your display, you&apos;re sure to 
 create a standout result. We understand the importance of crafting a visually striking and 
-memorable exhibition stand, and we hope the ideas we&apos;ve shared have inspired you. To see 
-some of these tips in action, be sure to check out our gallery showcasing previous builds and 
-designs we&apos;ve created.
+memorable exhibition stand, and we hope the ideas we&apos;ve shared have inspired you.
                                 </p>
                             </div>
                         </div>

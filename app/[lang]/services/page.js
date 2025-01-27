@@ -640,7 +640,7 @@ export default function Page({ params }) {
                                 className="w-full  group-hover:scale-105 transition-transform duration-300"
                             >
                                 <Image
-                                    src="/work1.png"
+                                    src="/work3.png"
                                     alt="Example"
                                     layout="responsive"
                                     width={700} // Use actual dimensions or responsive layout
