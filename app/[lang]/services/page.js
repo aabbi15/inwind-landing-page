@@ -543,7 +543,7 @@ export default function Page({ params }) {
 
                                     {/* {dict.About.why_content} */}
 
-                                    Our experts will be able to plan and build high-quality custom plinth blocks according exactly to your needs. Whether you're after some small display stands to promote different services and products, plinths with storage or something different entirely to give customers a great impression of your brand, we'll help you with one of our high quality display pedestals.  </p>
+                                    Our experts will be able to plan and build high-quality custom plinth blocks according exactly to your needs. Whether you&apos;re after some small display stands to promote different services and products, plinths with storage or something different entirely to give customers a great impression of your brand, we&apos;ll help you with one of our high quality display pedestals.  </p>
                             </div>
                         </div>
                     </motion.div>
