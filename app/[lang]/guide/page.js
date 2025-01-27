@@ -324,7 +324,7 @@ export default function Page({ params }) {
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>This is how a modern exhibition stand looks like.</p>
+                                <p>A simple yet effective stand.</p>
                             </div>
                         </div>
 
@@ -348,7 +348,7 @@ export default function Page({ params }) {
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>Example of a wooden exhibition stand.</p>
+                                <p>A rendered image of a modular exhibition stand design.</p>
                             </div>
                         </div>
 
@@ -442,7 +442,7 @@ streamline your setup, and focus on what truly matters—exhibiting!
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>This is how a modern exhibition stand looks like.</p>
+                                <p>A rendered image of a modern exhibition stand which is light themed.</p>
                             </div>
                         </div>
 
@@ -466,7 +466,7 @@ streamline your setup, and focus on what truly matters—exhibiting!
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>Example of a wooden exhibition stand.</p>
+                                <p>Example of a vibrant and colorful exhibition stand.</p>
                             </div>
                         </div>
 
@@ -625,7 +625,7 @@ perfectly fits your brand!
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>This is how a modern exhibition stand looks like.</p>
+                                <p>A sleek and simple blue stand.</p>
                             </div>
                         </div>
 
@@ -648,7 +648,7 @@ perfectly fits your brand!
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>This is how a modern exhibition stand looks like.</p>
+                                <p>Example of a wooden exhibition stand.</p>
                             </div>
                         </div>
 
@@ -672,7 +672,7 @@ perfectly fits your brand!
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>Example of a wooden exhibition stand.</p>
+                                <p>Example of an exhibition stand for displaying a car.</p>
                             </div>
                         </div>
 
@@ -845,7 +845,7 @@ to interact with exhibitors directly, not to read long paragraphs!
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>This is how a modern exhibition stand looks like.</p>
+                                <p>A large wooden exhibition stand.</p>
                             </div>
                         </div>
 
@@ -869,7 +869,7 @@ to interact with exhibitors directly, not to read long paragraphs!
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>Example of a wooden exhibition stand.</p>
+                                <p>This is how a modern minimalistic white exhibition stand looks like.</p>
                             </div>
                         </div>
 

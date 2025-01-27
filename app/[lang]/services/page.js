@@ -433,7 +433,7 @@ export default function Page({ params }) {
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>This is how a modern exhibition stand looks like.</p>
+                                <p>This is a rendering of a simple business stand.</p>
                             </div>
                         </div>
 
@@ -457,7 +457,7 @@ export default function Page({ params }) {
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>Example of a wooden exhibition stand.</p>
+                                <p>Example of a colorful and bold exhibition stand.</p>
                             </div>
                         </div>
 
@@ -568,7 +568,7 @@ export default function Page({ params }) {
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>This is how a modern exhibition stand looks like.</p>
+                                <p>A custom plinth for displaying jewellery.</p>
                             </div>
                         </div>
 
@@ -592,7 +592,7 @@ export default function Page({ params }) {
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>Example of a wooden exhibition stand.</p>
+                                <p>A custom plinth for displaying watches.</p>
                             </div>
                         </div>
 
@@ -654,7 +654,7 @@ export default function Page({ params }) {
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>This is how a modern exhibition stand looks like.</p>
+                                <p>Process of building a wodden exhibition stand.</p>
                             </div>
                         </div>
 
@@ -678,7 +678,7 @@ export default function Page({ params }) {
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>Example of a wooden exhibition stand.</p>
+                                <p>Rendering of wodden stand build process.</p>
                             </div>
                         </div>
 
@@ -766,7 +766,7 @@ export default function Page({ params }) {
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>This is how a modern exhibition stand looks like.</p>
+                                <p>Smaller stand for a car booth.</p>
                             </div>
                         </div>
 
@@ -790,7 +790,7 @@ export default function Page({ params }) {
                             <div
                                 className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
                             >
-                                <p>Example of a wooden exhibition stand.</p>
+                                <p>A simple yet effective and eyecatching design.</p>
                             </div>
                         </div>
 
