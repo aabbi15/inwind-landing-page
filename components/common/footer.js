@@ -32,12 +32,12 @@ export default function Footer() {
 						/>	 */}
 		
 		<footer className='w-full px-5 py-10 bg-[#202020] text-[#f7f7f7] '>
-			<div className='container mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-2 text-sm'>
-				<div className='flex flex-col items-center md:items-start'>
+			<div className='container mx-auto flex flex-col md:flex-row justify-between bgwhite items-center md:items-end gap-2 text-sm'>
+				<div className='flex flex-col items-center md:items-start bg-yellow300'>
 					
 					<a
 									aria-label='landing page template'
-									className='flex items-center w-1/2 '
+									className='flex items-center  bg-green400 '
 									title='landing page template'
 									href={`/${langName}`}
 								>
@@ -48,9 +48,9 @@ export default function Footer() {
 										className='rotator transition-all hover:scale-110 w-6 md:w-14 h-6 md:h-14'
 										alt='logo'
 									></Image>
-									<div className='flex flex-col text-white'>
-									<h2 className='ml-3 font-bold text-[22px] leading-5'>EXPO ESSENTIALS</h2>
-									<p className='ml-3 text-xs'>BOOTH CONSTRUCTION</p>
+									<div className='flex flex-col text-white justify-around h-14 '>
+									<h2 className='ml-3 font-bold text-[22px] '>EXPO ESSENTIALS</h2>
+									<p className='ml-3 text-[14px]'>BOOTH CONSTRUCTION</p>
 									</div>
 								</a>
 					<div className='flex flex-wrap mt-10 justify-center gap-x-2 md:gap-x-5 gap-y-1'>
