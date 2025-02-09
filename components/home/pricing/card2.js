@@ -3,9 +3,10 @@ import React from 'react';
 
 const ProjectCard = ({service}) => {
 
-  const {name,imagesrc,color} = service;
+  const {name,imagesrc,color,link} = service;
   console.log(service)
   return (
+    <a href={link}>
     <div 
     className={`ring-1 ring-black hover:ring-[#7124ff] m-2 group px-4 py-3
        bg-gray-200/10 rounded-lg flex flex-col items-center justify-center gap-2 relative 
@@ -48,6 +49,7 @@ const ProjectCard = ({service}) => {
         </p>
       </div>
     </div>
+    </a>
   );
 }
 

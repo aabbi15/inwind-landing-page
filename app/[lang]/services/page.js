@@ -74,23 +74,7 @@ const exhibitionIdeas = [
     },
 ];
 
-const mylist = [
-    {
-        icon: FaMobileAlt,
-        title: "Adaptive Booth Design",
-        description: "Booths adapt seamlessly to any expo space for optimal display.",
-    },
-    {
-        icon: MdDashboardCustomize,
-        title: "Easy Customization",
-        description: "Easily tailor colors, materials, and layout to fit your brand.",
-    },
-    {
-        icon: GrOptimize,
-        title: "Enhanced Brand Visibility",
-        description: "Maximize exposure and visitor engagement with strategic design.",
-    },
-]
+
 
 export default function Page({ params }) {
     const [dict, setDict] = useState({ About: {}, Testimonial: {}, CTA: {}, CTAButton: {} });
@@ -200,7 +184,9 @@ export default function Page({ params }) {
 
             <section className='flex flex-col gap-y-10 mb-32'>
                 {/* bespoke vala */}
-                <div class="grid grid-cols-2 py-5 bg-[#5DA5A4]">
+
+
+                <div id='1' class="grid grid-cols-2 py-5 bg-[#5DA5A4]">
 
 
 
@@ -280,7 +266,7 @@ export default function Page({ params }) {
                 <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
 
 
-                <div class="grid grid-cols-2 bg-[#D98880] py-5 ">
+                <div id='2' class="grid grid-cols-2 bg-[#D98880] py-5 ">
 
 
 
@@ -337,245 +323,245 @@ export default function Page({ params }) {
                 <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
 
                 {/* popupp vala   */}
-                <div class="grid grid-cols-2 py-5 bg-[#7A9EAB]">
+                <div id='3' class="grid grid-cols-2 py-5 bg-[#7A9EAB]">
 
 
 
-<div class="sticky top-0 col-span-1 h-screen  ">
-    <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-        className='py-5 px-7'
-    >
-        <h1 className='font-bold  text-2xl md:text-4xl   text-center text-black !leading-[1.25em] '>
-            {/* {dict.About.h1} */}
-            3. CUSTOM DISPLAY PLINTHS AND PEDESTALS
+                    <div class="sticky top-0 col-span-1 h-screen  ">
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
+                            className='py-5 px-7'
+                        >
+                            <h1 className='font-bold  text-2xl md:text-4xl   text-center text-black !leading-[1.25em] '>
+                                {/* {dict.About.h1} */}
+                                3. CUSTOM DISPLAY PLINTHS AND PEDESTALS
 
-        </h1>
-    </motion.div>
+                            </h1>
+                        </motion.div>
 
-    <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-        className=''
-    >
-        <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
+                            className=''
+                        >
+                            <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
 
-        Custom plinths provide a versatile, adaptable, and hassle-free solution for showcasing your
-                                    products or services, whether at your business premises or an event. For a truly flexible and
-                                    personalized display, our tailor-made plinths are the perfect choice. With quick and effortless
-                                    setup, you&apos;ll save valuable time, allowing you to focus on perfecting your presentation.
-                                 </div>
-
-
-
-        <div className={`text-xl py-1 my-5 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
-
-           
-        Our experts will be able to plan and build high-quality custom plinth blocks according exactly to your needs. Whether you&apos;re after some small display stands to promote different services and products, plinths with storage or something different entirely to give customers a great impression of your brand, we&apos;ll help you with one of our high quality display pedestals. 
-                      </div>
-
-
-    </motion.div>
-
-
-</div>
-
-
-<div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
-
-    <Image src="/guidea.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guidef.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guidec.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guided.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guidee.png" alt="Picture of the author" width={500} height={500} />
-</div>
-</div>
-
-<div class="grid grid-cols-2 py-5  bg-[#A58B6F]">
+                                Custom plinths provide a versatile, adaptable, and hassle-free solution for showcasing your
+                                products or services, whether at your business premises or an event. For a truly flexible and
+                                personalized display, our tailor-made plinths are the perfect choice. With quick and effortless
+                                setup, you&apos;ll save valuable time, allowing you to focus on perfecting your presentation.
+                            </div>
 
 
 
-<div class="sticky top-0 col-span-1 h-screen  ">
-    <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-        className='py-5 px-7'
-    >
-        <h1 className='font-bold  text-2xl md:text-4xl   text-center text-black !leading-[1.25em] '>
-            {/* {dict.About.h1} */}
-            4. Custom Plinth Design and Build Process
+                            <div className={`text-xl py-1 my-5 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
 
-        </h1>
-    </motion.div>
 
-    <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-        className=''
-    >
-        <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                                Our experts will be able to plan and build high-quality custom plinth blocks according exactly to your needs. Whether you&apos;re after some small display stands to promote different services and products, plinths with storage or something different entirely to give customers a great impression of your brand, we&apos;ll help you with one of our high quality display pedestals.
+                            </div>
 
-        Custom plinths provide a versatile, adaptable, and hassle-free solution for showcasing your
-                                    products or services, whether at your business premises or an event. For a truly flexible and
-                                    personalized display, our tailor-made plinths are the perfect choice. With quick and effortless
-                                    setup, you&apos;ll save valuable time, allowing you to focus on perfecting your presentation.
-                               </div>
+
+                        </motion.div>
+
+
+                    </div>
+
+
+                    <div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
+
+                        <Image src="/guidea.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guidef.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guidec.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guided.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guidee.png" alt="Picture of the author" width={500} height={500} />
+                    </div>
+                </div>
+
+                <div id='4' class="grid grid-cols-2 py-5  bg-[#A58B6F]">
 
 
 
-       
+                    <div class="sticky top-0 col-span-1 h-screen  ">
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
+                            className='py-5 px-7'
+                        >
+                            <h1 className='font-bold  text-2xl md:text-4xl   text-center text-black !leading-[1.25em] '>
+                                {/* {dict.About.h1} */}
+                                4. Custom Plinth Design and Build Process
 
-    </motion.div>
+                            </h1>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
+                            className=''
+                        >
+                            <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+
+                                Custom plinths provide a versatile, adaptable, and hassle-free solution for showcasing your
+                                products or services, whether at your business premises or an event. For a truly flexible and
+                                personalized display, our tailor-made plinths are the perfect choice. With quick and effortless
+                                setup, you&apos;ll save valuable time, allowing you to focus on perfecting your presentation.
+                            </div>
 
 
-</div>
-
-
-<div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
-
-    <Image src="/guidea.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guidef.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guidec.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guided.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guidee.png" alt="Picture of the author" width={500} height={500} />
-</div>
-</div>
 
 
 
-              
+                        </motion.div>
+
+
+                    </div>
+
+
+                    <div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
+
+                        <Image src="/guidea.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guidef.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guidec.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guided.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guidee.png" alt="Picture of the author" width={500} height={500} />
+                    </div>
+                </div>
+
+
+
+
 
                 <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
 
                 {/*  SMALL DISPLAY STANDS vala  */}
 
-                <div class="grid grid-cols-2 py-5 bg-[#8A9A5B]">
+                <div id='5' class="grid grid-cols-2 py-5 bg-[#8A9A5B]">
 
 
 
-<div class="sticky top-0 col-span-1 h-screen  ">
-    <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-        className='py-5 px-7'
-    >
-        <h1 className='font-bold  text-2xl md:text-4xl   text-center text-black !leading-[1.25em] '>
-            {/* {dict.About.h1} */}
-            5. SMALL DISPLAY STANDS
+                    <div class="sticky top-0 col-span-1 h-screen  ">
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
+                            className='py-5 px-7'
+                        >
+                            <h1 className='font-bold  text-2xl md:text-4xl   text-center text-black !leading-[1.25em] '>
+                                {/* {dict.About.h1} */}
+                                5. SMALL DISPLAY STANDS
 
-        </h1>
-    </motion.div>
+                            </h1>
+                        </motion.div>
 
-    <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-        className=''
-    >
-        <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
+                            className=''
+                        >
+                            <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
 
-        Our compact display stands are an excellent choice, offering impactful exhibition stand
-                                    designs without the hassle of complex installation or transportation. These small exhibition
-                                    stands provide an accessible and cost-effective way to showcase your brand. Affordable,
-                                    lightweight, and fully reusable, they can be easily reconfigured, moved, and self-assembled
-                                    eliminating the need for extra manpower or additional expenses!
-                                           </div>
-
-
-
-       
-
-    </motion.div>
+                                Our compact display stands are an excellent choice, offering impactful exhibition stand
+                                designs without the hassle of complex installation or transportation. These small exhibition
+                                stands provide an accessible and cost-effective way to showcase your brand. Affordable,
+                                lightweight, and fully reusable, they can be easily reconfigured, moved, and self-assembled
+                                eliminating the need for extra manpower or additional expenses!
+                            </div>
 
 
-</div>
 
 
-<div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
 
-    <Image src="/guidea.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guidef.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guidec.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guided.png" alt="Picture of the author" width={500} height={500} />
-    <Image src="/guidee.png" alt="Picture of the author" width={500} height={500} />
-</div>
-</div>
+                        </motion.div>
 
-              
+
+                    </div>
+
+
+                    <div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
+
+                        <Image src="/guidea.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guidef.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guidec.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guided.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/guidee.png" alt="Picture of the author" width={500} height={500} />
+                    </div>
+                </div>
+
+
 
                 <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
 
 
                 {/* {link to kuch aur} */}
 
-                <div class="grid grid-cols-2 py-5 bg-[#9D94B7]">
+                <div id='6' class="grid grid-cols-2 py-5 bg-[#9D94B7]">
 
 
 
-<div class="sticky top-0 col-span-1 h-screen  ">
-    <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-        className='py-5 px-7'
-    >
-        <h1 className='font-bold  text-2xl md:text-4xl   text-center text-black !leading-[1.25em] '>
-            {/* {dict.About.h1} */}
-            6. OUR GUIDE
+                    <div class="sticky top-0 col-span-1 h-screen  ">
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
+                            className='py-5 px-7'
+                        >
+                            <h1 className='font-bold  text-2xl md:text-4xl   text-center text-black !leading-[1.25em] '>
+                                {/* {dict.About.h1} */}
+                                6. OUR GUIDE
 
-        </h1>
-    </motion.div>
+                            </h1>
+                        </motion.div>
 
-    <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-        className=''
-    >
-        <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
+                            className=''
+                        >
+                            <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
 
-        Reach out to our guide to know more about how we can help you build the best booth.
-                                           </div>
-
-
-
-       
-
-    </motion.div>
+                                Reach out to our guide to know more about how we can help you build the best booth.
+                            </div>
 
 
-</div>
 
 
-<div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
 
-<a href='/en/guide' className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out ">
-                                <motion.div
-                                    className="w-full  group-hover:scale-105 transition-transform duration-300"
-                                >
-                                    <Image
-                                        src="/guide.png"
-                                        alt="Example"
-                                        // layout="responsive"
-                                        width={500}
-                                        height={500}
-                                       
-                                    />
-                                </motion.div>
+                        </motion.div>
 
-                                {/* Hover Text */}
 
-                            </a>
-</div>
-</div>
+                    </div>
 
-               
+
+                    <div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
+
+                        <a href='/en/guide' className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out ">
+                            <motion.div
+                                className="w-full  group-hover:scale-105 transition-transform duration-300"
+                            >
+                                <Image
+                                    src="/guide.png"
+                                    alt="Example"
+                                    // layout="responsive"
+                                    width={500}
+                                    height={500}
+
+                                />
+                            </motion.div>
+
+                            {/* Hover Text */}
+
+                        </a>
+                    </div>
+                </div>
+
+
 
 
 

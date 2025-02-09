@@ -10,32 +10,38 @@ const Services = [
 	{
 		name: 'BESPOKE EXHIBITION STANDS',
 		imagesrc: '/guidea.png',
-		color :'#5DA5A4'
+		color :'#5DA5A4',
+		link: '/en/services#1'
 	},
 	{
 		name: ' EXHIBITION STAND CONTRACTORS',
 		imagesrc: '/guidef.png',
-		color :'#D98880'
+		color :'#D98880',
+		link: '/en/services#2'
 	},
 	{
 		name: 'CUSTOM DISPLAY PLINTHS AND PEDESTALS',
 		imagesrc: '/guidec.png',
-		color :'#7A9EAB'
+		color :'#7A9EAB',
+		link: '/en/services#3'
 	},
 	{
 		name: 'Custom Plinth Design and Build Process',
 		imagesrc: '/guided.png',
-		color :'#A58B6F'
+		color :'#A58B6F',
+		link: '/en/services#4'
 	},
 	{
 		name: 'SMALL DISPLAY STANDS',
 		imagesrc: '/guidee.png',
-		color :'#8A9A5B'
+		color :'#8A9A5B',
+		link: '/en/services#5'
 	},
 	{
 		name: 'OUR  GUIDE',
 		imagesrc: '/guide.png',
-		color :'#9D94B7'
+		color :'#9D94B7',
+		link: '/en/guide'
 	},
 
 
