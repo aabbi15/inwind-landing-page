@@ -11,10 +11,14 @@ export default function Example() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    company: "",
     email: "",
+    company: "",
     phoneNumber: "",
-    message: "",
+    message:"",
+    serviceType: "",
+    eventLocation: "",
+    size: "",
+    file: null,
   });
 
   const handleInputChange = (e) => {
@@ -25,24 +29,40 @@ export default function Example() {
     }));
   };
 
+  const handleFileChange = async (event) => {
+    const file = event.target.files[0];
+    if (!file) return;
+  
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => {
+      setFormData((prev) => ({ ...prev, file: reader.result }));
+    };
+    reader.onerror = (error) => {
+      console.error("Error converting file:", error);
+    };
+  };
+  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Ensure required fields are filled
-    if (!formData.email || !formData.message) {
-      alert("Email and Message are required.");
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.company || !formData.phoneNumber || !formData.serviceType || !formData.eventLocation) {
+      alert("All fields except Booth Size and File Upload are required.");
       return;
     }
 
     setLoading(true);
 
     try {
+      const formDataObj = new FormData();
+      Object.keys(formData).forEach((key) => {
+        formDataObj.append(key, formData[key]);
+      });
+
       const response = await fetch("/api/send", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+        body: formDataObj,
       });
 
       if (response.ok) {
@@ -50,10 +70,14 @@ export default function Example() {
         setFormData({
           firstName: "",
           lastName: "",
-          company: "",
           email: "",
+          company: "",
           phoneNumber: "",
-          message: "",
+          message:"",
+          serviceType: "",
+          eventLocation: "",
+          size: "",
+          file: null,
         });
       } else {
         const data = await response.json();
@@ -176,7 +200,7 @@ export default function Example() {
 
 
         <div>
-      <form
+      {/* <form
         onSubmit={handleSubmit}
         className="mx-auto mt-16 max-w-xl sm:mt-20"
       >
@@ -305,7 +329,198 @@ export default function Example() {
 
 </div>
         </div>
-      </form>
+      </form> */}
+
+<form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20 bg-white p-6 rounded-lg shadow">
+  <div className="grid grid-cols-1 gap-x-4 gap-y-2 sm:grid-cols-2">
+    <div>
+      <label htmlFor="firstName" className="block text-sm/6 font-semibold text-gray-700">
+        First name *
+      </label>
+      <div className="mt-1">
+        <input
+          id="firstName"
+          name="firstName"
+          type="text"
+          placeholder="John"
+          value={formData.firstName}
+          onChange={handleInputChange}
+          className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+        />
+      </div>
+    </div>
+
+    <div>
+      <label htmlFor="lastName" className="block text-sm/6 font-semibold text-gray-700">
+        Last name *
+      </label>
+      <div className="mt-1">
+        <input
+          id="lastName"
+          name="lastName"
+          type="text"
+          placeholder="Smith"
+          value={formData.lastName}
+          onChange={handleInputChange}
+          className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+        />
+      </div>
+    </div>
+
+    <div>
+      <label htmlFor="email" className="block text-sm/6 font-semibold text-gray-700">
+        Email *
+      </label>
+      <div className="mt-1">
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="example@email.com"
+          value={formData.email}
+          onChange={handleInputChange}
+          className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+        />
+      </div>
+    </div>
+
+    <div>
+      <label htmlFor="company" className="block text-sm/6 font-semibold text-gray-700">
+        Company *
+      </label>
+      <div className="mt-1">
+        <input
+          id="company"
+          name="company"
+          type="text"
+          placeholder="Company Name"
+          value={formData.company}
+          onChange={handleInputChange}
+          className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+        />
+      </div>
+    </div>
+
+    <div className="sm:col-span-2">
+      <label htmlFor="phoneNumber" className="block text-sm/6 font-semibold text-gray-700">
+        Phone number *
+      </label>
+      <div className="mt-1">
+        <input
+          id="phoneNumber"
+          name="phoneNumber"
+          type="text"
+          placeholder="+91-9824057689"
+          value={formData.phoneNumber}
+          onChange={handleInputChange}
+          className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+        />
+      </div>
+    </div>
+
+
+    <div className="sm:col-span-2">
+            <label htmlFor="message" className="block text-sm/6 font-semibold text-gray-700">
+              Project Details *
+            </label>
+            <div className="mt-1">
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                placeholder="Your proposal here..."
+                value={formData.message}
+                onChange={handleInputChange}
+                className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+              />
+            </div>
+          </div>
+
+    <div className="sm:col-span-2">
+      <label htmlFor="serviceType" className="block text-sm/6 font-semibold text-gray-700">
+        Type of Service *
+      </label>
+      <div className="mt-1">
+        <select
+          id="serviceType"
+          name="serviceType"
+          value={formData.serviceType}
+          onChange={handleInputChange}
+          className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:outline-indigo-600"
+        >
+          <option value="">Select Type of Service</option>
+          <option value="BESPOKE EXHIBITION STANDS">Bespoke Exhibition Stands</option>
+          <option value="MODULAR EXHIBITION STAND IDEAS">Modular Exhibition Stand Ideas</option>
+          <option value="POP UP & FOLDABLE EXHIBITION STAND IDEAS">Pop Up & Foldable Exhibition Stand Ideas</option>
+          <option value="CUSTOM DISPLAY PLINTHS AND PEDESTALS">Custom Display Plinths and Pedestals</option>
+          <option value="SMALL DISPLAY STANDS">Small Display Stands</option>
+          <option value="LARGE DISPLAY STANDS">Large Display Stands</option>
+          <option value="OTHER">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div className="sm:col-span-2">
+      <label htmlFor="eventLocation" className="block text-sm/6 font-semibold text-gray-700">
+        Event Location (City) *
+      </label>
+      <div className="mt-1">
+        <input
+          id="eventLocation"
+          name="eventLocation"
+          type="text"
+          placeholder="Event Location"
+          value={formData.eventLocation}
+          onChange={handleInputChange}
+          className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:outline-indigo-600"
+        />
+      </div>
+    </div>
+
+    <div className="sm:col-span-2">
+      <label htmlFor="eventLocation" className="block text-sm/6 font-semibold text-gray-700">
+        Exhibition Stand/ Booth Size
+      </label>
+      <div className="mt-1">
+        <input
+          id="size"
+          name="size"
+          type="text"
+          placeholder="100x100 ft"
+          value={formData.size}
+          onChange={handleInputChange}
+          className="block w-full rounded-md bg-gray-100 px-3.5 py-2 text-base text-black outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:outline-indigo-600"
+        />
+      </div>
+    </div>
+
+    <div className="sm:col-span-2">
+      <label htmlFor="file" className="block text-sm/6 font-semibold text-gray-700">
+        Upload File
+      </label>
+      <div className="mt-1">
+        <input
+          type="file"
+          id="file"
+          name="file"
+          onChange={handleFileChange}
+          className="block w-full text-gray-900 bg-gray-100 rounded-md border border-gray-300 px-3.5 py-2 focus:outline-indigo-600"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div className="mt-6">
+    <button
+      type="submit"
+      className="w-full py-2 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700"
+      disabled={loading}
+    >
+      {loading ? "Sending..." : "LET'S TALK"}
+    </button>
+  </div>
+</form>
+
 
       </div>
 
