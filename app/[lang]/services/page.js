@@ -239,7 +239,7 @@ export default function Page({ params }) {
 
                             <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
 
-                                We are a bespoke exhibition stand company that stands out from the rest. Our experienced team is with you every step of the way—from your first call to the design, construction, delivery, and installation of your custom exhibition stand. No matter where you're exhibiting, our tailored display stands are the ultimate solution for showcasing your brand and products effectively!
+                                We are a bespoke exhibition stand company that stands out from the rest. Our experienced team is with you every step of the way—from your first call to the design, construction, delivery, and installation of your custom exhibition stand. No matter where you&apos;re exhibiting, our tailored display stands are the ultimate solution for showcasing your brand and products effectively!
                             </div>
 
 

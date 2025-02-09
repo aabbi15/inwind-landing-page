@@ -116,7 +116,7 @@ export default function Page({ params }) {
           <h2 className="text-3xl font-bold  mb-8 ">Who We Are</h2>
           
             <p className=" text-gray-100 mb-4">
-              We're a passionate team of project managers, joiners, and designers, committed to 
+              We&apos;re a passionate team of project managers, joiners, and designers, committed to 
               delivering an exceptional service in the industry.
             </p>
             <p className=" text-gray-100 mb-4">
@@ -125,7 +125,7 @@ export default function Page({ params }) {
             </p>
             <p className=" text-gray-100">
               Driven by enthusiasm and a love for what we do, we thrive on taking on challenging 
-              concepts and pushing boundaries—no matter what, we're determined to make your vision a reality.
+              concepts and pushing boundaries—no matter what, we&apos;re determined to make your vision a reality.
             </p>
           </div>
 		  <div className='col-span-7 md:col-span-3 relative rounded-2xl overflow-hidden shadow-xl'>
@@ -152,14 +152,14 @@ alt='about_1'
           <h2 className="text-3xl font-bold  mb-8 "> Tailored Solutions for Your Success</h2>
           {/* </a> */}
             <p className=" text-gray-100 mb-4">
-			We dive deep into your brand's DNA and trade show objectives, crafting a vision that 
-              aligns perfectly with your market domination goals. We're dedicated to providing our 
+			We dive deep into your brand&apos;s DNA and trade show objectives, crafting a vision that 
+              aligns perfectly with your market domination goals. We&apos;re dedicated to providing our 
               clients with expert advice throughout the entire process, whether for exhibitions or 
               pop-up installations.
             </p>
             <p className=" text-gray-100 mb-4">
 			From guiding you through your budget and planning your installation to choosing the 
-			ideal design, we're here to make it all run smoothly.
+			ideal design, we&apos;re here to make it all run smoothly.
 			</p>
             
           </div>
@@ -190,11 +190,11 @@ alt='about_1'
             approach, we ensure that every project receives the highest level of attention and care.
           </p>
           <p className=" text-gray-800 mb-6">
-            When you work with us on your exhibition build, you'll be assigned a dedicated Project 
+            When you work with us on your exhibition build, you&apos;ll be assigned a dedicated Project 
             Manager who will oversee the entire process, providing guidance and support from start to finish.
           </p>
           <p className=" text-gray-800 font-medium">
-            But don't simply take our word for it—explore the testimonials from our satisfied clients 
+            But don&apos;t simply take our word for it—explore the testimonials from our satisfied clients 
             to see for yourself.
           </p>
 	 </section>
