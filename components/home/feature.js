@@ -3,6 +3,45 @@ import { motion } from 'framer-motion';
 import FeatureCard from './feature/card';
 import { FeaturesList } from '@/lib/featuresList';
 import { MdOutlineFeaturedPlayList } from 'react-icons/md';
+import ProjectCard from './pricing/card2';
+
+
+const Services = [
+	{
+		name: 'BESPOKE EXHIBITION STANDS',
+		imagesrc: '/guidea.png',
+		color :'#5DA5A4'
+	},
+	{
+		name: ' EXHIBITION STAND CONTRACTORS',
+		imagesrc: '/guidef.png',
+		color :'#D98880'
+	},
+	{
+		name: 'CUSTOM DISPLAY PLINTHS AND PEDESTALS',
+		imagesrc: '/guidec.png',
+		color :'#7A9EAB'
+	},
+	{
+		name: 'Custom Plinth Design and Build Process',
+		imagesrc: '/guided.png',
+		color :'#A58B6F'
+	},
+	{
+		name: 'SMALL DISPLAY STANDS',
+		imagesrc: '/guidee.png',
+		color :'#8A9A5B'
+	},
+	{
+		name: 'OUR  GUIDE',
+		imagesrc: '/guide.png',
+		color :'#9D94B7'
+	},
+
+
+
+]
+	
 
 export default function Feature({ locale, langName = 'en' }) {
 	let list = FeaturesList[`FRETURES_${langName.toUpperCase()}`] || [];
@@ -25,17 +64,17 @@ export default function Feature({ locale, langName = 'en' }) {
 							<MdOutlineFeaturedPlayList /> <h2>
 								
 								{/* {locale.h2} */}
-								Our Features
+								Our Sevices
 								
 								</h2>
 						</div>
 						<div className='absolute w-0 h-full bg-base-content z-[0]'></div>
 					</div>
 
-					<h3 className='font-bold text-3xl md:text-5xl bg-gradient-to-r from-base-content from-50% to-[#9c9c9c] md:text-center bg-clip-text text-transparent !leading-[1.25em]'>
-						{/* {locale.h3} */}
-						Features of ExpoEssentials Booth Design Service
-					</h3>
+					{/* <h3 className='font-bold text-3xl md:text-5xl bg-gradient-to-r from-base-content from-50% to-[#9c9c9c] md:text-center bg-clip-text text-transparent !leading-[1.25em]'>
+						
+						Services of ExpoEssentials Booth Design Service
+					</h3> */}
 
 					<h4 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center'>
 						{/* {locale.description1} */}
@@ -51,7 +90,7 @@ export default function Feature({ locale, langName = 'en' }) {
 			</motion.div>
 
 			<div className='relative z-10 w-full md:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-5'>
-				{list.map((item, index) => {
+				{Services.map((item, index) => {
 					return (
 						<motion.div
 							key={index}
@@ -61,7 +100,9 @@ export default function Feature({ locale, langName = 'en' }) {
 								duration: 0.5,
 							}}
 						>
-							<FeatureCard featureItem={item} />
+							{/* <FeatureCard featureItem={item} /> */}
+
+							<ProjectCard service={item}/>
 						</motion.div>
 					);
 				})}
