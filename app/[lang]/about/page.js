@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { BsPatchQuestionFill } from 'react-icons/bs';
 import { RiTeamFill } from 'react-icons/ri';
 
-import TestimonialCard from '@/components/home/testimonial/card';
+import Testimonial from '@/components/home/testimonial';
 import { TestimonialsList } from '@/lib/testimonialsList';
 import { usePathname } from 'next/navigation';
 import { defaultLocale, getDictionary } from '@/lib/i18n';
@@ -44,25 +44,14 @@ export default function Page({ params }) {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
 					>
-						<h1 className='font-bold text-5xl md:text-7xl bg-gradient-to-r from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] mb-5'>
+						<h1 className='font-bold text-5xl md:text-7xl text-center !leading-[1.25em] mb-5'>
 							{dict.About.h1}
 						</h1>
 					</motion.div>
 
-					<motion.div
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{
-							delay: 0.4,
-							duration: 1,
-						}}
-					>
-						<h2 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center mb-5 md:mb-10'>
-							{dict.About.h2}
-						</h2>
-					</motion.div>
+			
 				</div>
-				<div className='absolute w-[100%] left-[0] top-[10%] md:top-[20%] h-[200px]'>
+				<div className='absolute w-[100%] left-[0] top-[5%] md:top-[10%] h-[200px]'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						id='patternId'
@@ -105,121 +94,118 @@ export default function Page({ params }) {
 					<div className='bg-gradient-to-t from-base-100  from-1% to-transparent to-30% absolute inset-0'></div>
 				</div>
 			</section>
-			<section className='flex flex-col gap-y-10 mb-32'>
 
-				<motion.div
-					initial={{ opacity: 0, y: 50 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-				>
-					<div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
-						<div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
-							<Image
-								src={'/about3.png'}
-								layout='fill'
-								objectFit='cover'
-								className='hover:scale-105 transition-all'
-								alt='about_1'
-							/>
-						</div>
-						<div className='w-full md:w-3/5 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
-							<div className='flex items-center justify-between py-5'>
-								<h2 className='text-3xl font-bold'>
-									
-									{/* {dict.About.why} */}
-									The journey started with one clear <span className=' '> aspiration</span>
-									</h2>
-								<BsPatchQuestionFill size={48} />
-							</div>
-							<p className={`text-lg break-words ${langName === 'ar' && 'text-right'}`} >
-								
-								{/* {dict.About.why_content} */}
-								
-								We&apos;re a team of dedicated project managers, joiners and designers delivering an unrivalled 
-service in the industry. 
-With our combined experience and our creative outlook towards making sure each build is 
-tailored to you; we continue to build up a wealth of successfully delivered projects. 
-Our enthusiasm and passion about what we do is maintained and demonstrated in the 
-challenging concepts we often pursue and above all we never give up. 
-								</p>
-						</div>
-					</div>
-				</motion.div>
-				
-				<motion.div
-					initial={{ opacity: 0, y: 50 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-				>
-					<div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
-						<div className='w-full md:w-3/5 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
-							<div className='flex items-center justify-between py-5'>
-								<RiTeamFill size={48} />
-								<h2 className='text-3xl font-bold'>
-									
-									{/* {dict.About.team} */}
-									Excellence. Control. Trust. 
-									</h2>
-							</div>
-							<p className={`text-lg break-words ${langName === 'ar' && 'text-right'}`} >
-								
-								{/* {dict.About.team_content} */}
-								Discover unparalleled clarity in event management with Expo Essentials™. We empower 
-exhibitors with cutting-edge solutions, seamless processes, and stress-free experiences that 
-bring your vision to life. 
-								</p>
-						</div>
-						<div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
-							<Image
-								src={'/about2.png'}
-								layout='fill'
-								objectFit='cover'
-								className='hover:scale-105 transition-all'
-								alt='about_2'
-							/>
-						</div>
-					</div>
-				</motion.div>
+			<div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="container mx-auto px-4 py-16">
+       
+	   
+        <p className=" text-gray-800 text-xl md:text-2xl text-center">
+          We specialise in crafting bespoke exhibition spaces, pop-up installations, and innovative designs 
+          that leave a lasting impression. From the very first idea to the final build, we offer end-to-end 
+          project management and a fully integrated, turn-key service. Our team is committed to providing a 
+          seamless, stress-free experience, bringing your vision to life with careful attention to detail at every step.
+        </p>
+		
+      </section>
 
-				<motion.div
-					initial={{ opacity: 0, y: 50 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-				>
-					<div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
-						<div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
-							<Image
-								src={'/about1.png'}
-								layout='fill'
-								objectFit='cover'
-								className='hover:scale-105 transition-all'
-								alt='about_1'
-							/>
-						</div>
-						<div className='w-full md:w-3/5 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200 shadow-xl'>
-							<div className='flex items-center justify-between py-5'>
-								<h2 className='text-3xl font-bold'>
-									
-									{/* {dict.About.why} */}
-									Building visions, creating reality. 
-									</h2>
-								<BsPatchQuestionFill size={48} />
-							</div>
-							<p className={`text-lg break-words ${langName === 'ar' && 'text-right'}`} >
-								
-								{/* {dict.About.why_content} */}
-								
-								We aim to ensure our clients keep returning by prioritizing customer satisfaction above all. Our 
-blend of expert knowledge and hands-on experience is complemented by a personal touch. 
-When you approach us for exhibition build inspiration, you will be paired with a dedicated 
-Project Manager. This manager will accompany you from the initial concept to the final 
-execution, providing guidance and collaboration every step of the journey. 
-								</p>
-						</div>
-					</div>
-				</motion.div>
-			</section>
+      {/* Who We Are Section */}
+      <section className="bg-gray-950 ring-1 py-16 mb-14">
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-7 items-start gap-12">
+		<div className="col-span-7 md:col-span-4 text-gray-100">
+          <h2 className="text-3xl font-bold  mb-8 ">Who We Are</h2>
+          
+            <p className=" text-gray-100 mb-4">
+              We're a passionate team of project managers, joiners, and designers, committed to 
+              delivering an exceptional service in the industry.
+            </p>
+            <p className=" text-gray-100 mb-4">
+              With years of experience and a creative approach, we ensure each project is customised 
+              to your needs, and our growing portfolio of successful global projects speaks for itself.
+            </p>
+            <p className=" text-gray-100">
+              Driven by enthusiasm and a love for what we do, we thrive on taking on challenging 
+              concepts and pushing boundaries—no matter what, we're determined to make your vision a reality.
+            </p>
+          </div>
+		  <div className='col-span-7 md:col-span-3 relative rounded-2xl overflow-hidden shadow-xl'>
+		  <Image 
 
+src={'/ab1.png'}
+width={600}
+height={400}
+layout='responsive'
+objectFit='cover'
+className='hover:scale-105 transition-all'
+alt='about_1'
+/>
+		  </div>
+        </div>
+
+		
+      </section>
+
+	  <section className="bg-gray-950 ring-1 py-16">
+        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-7 items-start gap-12">
+		<div className="col-span-7 md:col-span-4 text-gray-100">
+		{/* <a href='https://api.whatsapp.com/send?phone=917490070001'> */}
+          <h2 className="text-3xl font-bold  mb-8 "> Tailored Solutions for Your Success</h2>
+          {/* </a> */}
+            <p className=" text-gray-100 mb-4">
+			We dive deep into your brand's DNA and trade show objectives, crafting a vision that 
+              aligns perfectly with your market domination goals. We're dedicated to providing our 
+              clients with expert advice throughout the entire process, whether for exhibitions or 
+              pop-up installations.
+            </p>
+            <p className=" text-gray-100 mb-4">
+			From guiding you through your budget and planning your installation to choosing the 
+			ideal design, we're here to make it all run smoothly.
+			</p>
+            
+          </div>
+		  <div className='col-span-7 md:col-span-3 relative rounded-2xl overflow-hidden shadow-xl'>
+		  <Image 
+
+src={'/guide.png'}
+width={600}
+height={400}
+layout='responsive'
+objectFit='cover'
+className='hover:scale-105 transition-all'
+alt='about_1'
+/>
+		  </div>
+        </div>
+
+		
+      </section>
+
+      {/* Tailored Solutions Section */}
+	  <section className="container mx-auto px-8 py-16 text-gray-800 text-xl md:text-2xl text-center">
+       
+	  
+	   <p className=" text-gray-800 mb-6">
+            We prioritise building lasting relationships with our clients, which is why customer 
+            satisfaction is of utmost importance to us. With our extensive expertise and personalised 
+            approach, we ensure that every project receives the highest level of attention and care.
+          </p>
+          <p className=" text-gray-800 mb-6">
+            When you work with us on your exhibition build, you'll be assigned a dedicated Project 
+            Manager who will oversee the entire process, providing guidance and support from start to finish.
+          </p>
+          <p className=" text-gray-800 font-medium">
+            But don't simply take our word for it—explore the testimonials from our satisfied clients 
+            to see for yourself.
+          </p>
+	 </section>
+
+      {/* Customer Satisfaction Section */}
+    
+    </div>
+			<Testimonial
+							locale={dict.Testimonial}
+							langName={langName}
+						/>
 
 			
 
