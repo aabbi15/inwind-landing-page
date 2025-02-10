@@ -38,11 +38,17 @@ const Services = [
 		link: '/en/services#5'
 	},
 	{
-		name: 'USTOM DISPLAY PLINTHS AND PEDESTALS ',
-		imagesrc: '/guide.png',
+		name: 'CUSTOM DISPLAY PLINTHS AND PEDESTALS ',
+		imagesrc: '/service/plinth/1.png',
 		color :'#9D94B7',
 		link: '/en/services#6'
 	},
+	{
+		name: 'Others ',
+		imagesrc: '/newguide.png',
+		color :'#9D94B7',
+		link: '/en/guide'
+	}
 
 
 
