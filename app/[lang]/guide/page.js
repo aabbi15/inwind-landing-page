@@ -308,7 +308,8 @@ export default function Page({ params }) {
             <div className="flex items-center gap-8">
               <FaPalette className="w-16 h-16 text-xl text-blue-600 flex-shrink-0 hidden lg:block" />
               <p className="text-gray-800  text-xl">
-                The graphics and branding on your stand are what speak to your audience long before they engage with you. Bold, high-quality graphics that align with your brand's identity help capture attention and make a memorable first impression. From logos to colour schemes and messaging, confident branding creates an unforgettable impact.
+                The graphics and branding on your stand are what speak to your audience long before they engage with you.
+                 Bold, high-quality graphics that align with your brand&apos;s identity help capture attention and make a memorable first impression. From logos to colour schemes and messaging, confident branding creates an unforgettable impact.
               </p>
             </div>
           </div>
