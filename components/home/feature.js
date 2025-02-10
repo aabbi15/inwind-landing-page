@@ -14,34 +14,34 @@ const Services = [
 		link: '/en/services#1'
 	},
 	{
-		name: ' EXHIBITION STAND CONTRACTORS',
+		name: ' MODULAR TRADE SHOW BOOTH  ',
 		imagesrc: '/guidef.png',
 		color :'#D98880',
 		link: '/en/services#2'
 	},
 	{
-		name: 'CUSTOM DISPLAY PLINTHS AND PEDESTALS',
+		name: 'POP UP & FOLDABLE EXHIBITION STAND',
 		imagesrc: '/guidec.png',
 		color :'#7A9EAB',
 		link: '/en/services#3'
 	},
 	{
-		name: 'Custom Plinth Design and Build Process',
+		name: 'SMALL DISPLAY STANDS ',
 		imagesrc: '/guided.png',
 		color :'#A58B6F',
 		link: '/en/services#4'
 	},
 	{
-		name: 'SMALL DISPLAY STANDS',
+		name: 'LARGE DISPLAY STANDS',
 		imagesrc: '/guidee.png',
 		color :'#8A9A5B',
 		link: '/en/services#5'
 	},
 	{
-		name: 'OUR  GUIDE',
+		name: 'USTOM DISPLAY PLINTHS AND PEDESTALS ',
 		imagesrc: '/guide.png',
 		color :'#9D94B7',
-		link: '/en/guide'
+		link: '/en/services#6'
 	},
 
 
