@@ -198,7 +198,9 @@ export default function Page({ params }) {
         <div className=" mx-auto">
          
           <p className=" text-gray-800 max-w3xl text-xl mx-auto text-center mb-8">
-            Planning your exhibition stand can feel overwhelming, but it doesn't have to be! Our guide is designed to make the process smooth, insightful, and enjoyable. Whether you're a first-timer or a seasoned exhibitor, we've got you covered with everything you need to ensure your display stands out and delivers results.
+            Planning your exhibition stand can feel overwhelming, but it doesn&apos;t have to be! Our guide is designed to make the process smooth, insightful, and enjoyable. 
+            Whether you&apos;re a first-timer or a seasoned exhibitor, we&apos;ve got you covered with everything you need to ensure
+             your display stands out and delivers results.
           </p>
         </div>
       </section>
@@ -220,14 +222,22 @@ export default function Page({ params }) {
             </div>
             <div className="w-full lg:w-3/4 space-y-6">
               <p className="text-gray-800">
-                At <span className="font-bold">EXPO ESSENTIALS</span>, we specialise in designing and building fully customised exhibition stands that not only look stunning but are also practical and durable. Whether you're showcasing your brand at a trade show, conference, or outdoor event, our expert team is here to make sure your stand leaves a lasting impression.
+                At <span className="font-bold">EXPO ESSENTIALS</span>, we specialise in designing and building fully customised exhibition stands that not only look stunning but are also practical and durable.
+                 Whether you&apos;re showcasing your brand at a trade show, conference, or outdoor event, our expert team is
+                  here to make sure your stand leaves a lasting impression.
               </p>
               <p className="text-gray-600">
-                We pride ourselves on combining style, functionality, and precision to create displays that capture attention and attract the right audience. From sleek, portable stands to eye-catching, bespoke outdoor displays, we work with you to ensure every detail reflects your brand's identity.
+                We pride ourselves on combining style, functionality, and precision to create displays that capture attention and attract the
+                 right audience. From sleek, portable stands to eye-catching, bespoke outdoor displays, we work with you to ensure every detail
+                  reflects your brand&apos;s identity.
               </p>
              
               <p className="text-gray-800">
-                Our team of designers and project managers are dedicated to bringing your vision to life. Simply share your ideas with us, and we&apos;ll create a stand that is as unique as your business. We use only the finest materials to ensure your exhibition stand not only stands out but stands the test of time. Plus, we can take care of everything - from delivery to installation - so you can focus on what really matters: making an impact at your next event.
+                Our team of designers and project managers are dedicated to bringing your vision to life.
+                 Simply share your ideas with us, and we&apos;ll create a stand that is as unique as your business. We use
+                  only the finest materials to ensure your exhibition stand not only stands out but stands the test of time.
+                   Plus, we can take care of everything - from delivery to installation - so you can focus on
+                    what really matters: making an impact at your next event.
               </p>
               <p className="text-gray-800 font-semibold">
                 Let us help you make your next exhibition a memorable one!
@@ -262,7 +272,7 @@ export default function Page({ params }) {
             ))}
           </div>
           <p className="text-center text-gray-800 text-xl mt-8">
-            We'll help you choose the one that suits your needs, space, and budget!
+            We&apos;ll help you choose the one that suits your needs, space, and budget!
           </p>
         </div>
       </section>
@@ -277,7 +287,11 @@ export default function Page({ params }) {
             <div className="flex items-center gap-8">
               <FaTools className="w-16 h-16 text-blue-600 flex-shrink-0 hidden lg:block" />
               <p className="text-gray-800  text-xl">
-                When designing your stand, the materials you choose can make all the difference in both form and function. You need a balance of durability, transportability, and aesthetics. High-quality materials can make your stand look polished while offering ease of setup and teardown. Whether it's smooth acrylics, strong wooden elements, or vibrant fabrics, we guide you through selecting the right materials for your goals.
+                When designing your stand, the materials you choose can make all the difference in both form
+                 and function. You need a balance of durability, transportability, and aesthetics. 
+                 High-quality materials can make your stand look polished while offering ease of setup and teardown.
+                  Whether it&apos;s smooth acrylics, strong wooden elements, or vibrant fabrics, we guide you through selecting
+                   the right materials for your goals.
               </p>
             </div>
           </div>
@@ -308,7 +322,10 @@ export default function Page({ params }) {
             Get Started Today!
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-            Now that you're armed with all the essential information, it's time to take action and bring your exhibition vision to life! Whether you're looking to create a striking bespoke stand or an easy-to-assemble pop-up booth, we're here to guide you every step of the way. Get in touch with us today and let's start planning your perfect exhibition experience.
+            Now that you&apos;re armed with all the essential information, it&apos;s time to take action and bring your exhibition vision
+             to life! Whether you&apos;re looking to create a striking bespoke stand or an easy-to-assemble pop-up booth,
+              we&apos;re here to guide you every step of the way.
+               Get in touch with us today and let&apos;s start planning your perfect exhibition experience.
           </p>
          
         </div>
