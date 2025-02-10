@@ -6,6 +6,7 @@ import Pricing from '@/components/home/pricing';
 import Testimonial from '@/components/home/testimonial';
 import Faq from '@/components/home/faq';
 import Cta from '@/components/home/cta';
+import Feature2 from '@/components/home/feature2';
 export default async function Home({ params }) {
 	const langName = params.lang || defaultLocale;
 	const dict = await getDictionary(langName); // 获取内容
@@ -24,10 +25,13 @@ export default async function Home({ params }) {
 				locale={dict.Pricing}
 				langName={langName}
 			/> */}
-			<Testimonial
+			<Feature2 
+				locale={dict.Feature}
+				langName={langName}/>
+			{/* <Testimonial
 				locale={dict.Testimonial}
 				langName={langName}
-			/>
+			/> */}
 			<Faq
 				locale={dict.Faq}
 				langName={langName}

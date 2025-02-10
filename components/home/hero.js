@@ -79,7 +79,7 @@ export default function Hero({ locale, CTALocale }) {
 					<Image
 						width={900}
 						height={600}
-						src={'/guidea.png'}
+						src={'/home.png'}
 						className='hidden md:flex  -mt-10 rounded-lg '
 						alt='app demo'
 					/>
