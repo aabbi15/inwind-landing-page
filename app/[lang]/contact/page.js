@@ -5,7 +5,7 @@ import { Field, Label, Switch } from "@headlessui/react";
 import { motion } from "framer-motion";
 import MyButton from "./mybutton";
 import Cta from "@/components/home/cta";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Example() {
   const [loading, setLoading] = useState(false);
@@ -401,7 +401,7 @@ export default function Example() {
           </div>
 
           <div>
-
+          <a href='https://www.instagram.com/expoessentials.in?igsh=MTlvOGxtNDQxdzdqcA%3D%3D&utm_source=qr'>
             <div className="flex gap-3 ">
               <span className="inline-block p-2 text-yellow-300 rounded-full bg-blue-100/50">
                 <FaInstagram className="w-5 h-5" />
@@ -411,15 +411,17 @@ export default function Example() {
 
             </div>
             <p className="mt-1.5 text-base text-gray-100">Follow us for updates & inspiration.</p>
-            <p className="mt-1.5 text-base text-yellow-300">@expoessentials</p>
+            <p className="mt-1.5 text-base text-yellow-300">@expoessentials.in</p>
+            </a>
           </div>
 
           <div>
 
             
-
+          <a href='https://api.whatsapp.com/send?phone=919313853583'>
             <div className="flex gap-3 ">
 
+            
               <span className="inline-block p-2 text-yellow-300 rounded-full bg-blue-100/50">
                 <FaWhatsapp className="w-5 h-5" />
               </span>
@@ -429,8 +431,30 @@ export default function Example() {
             </div>
             <p className="mt-1.5 text-base text-gray-100">Quick responses on WhatsApp.</p>
             <p className="mt-1.5 text-base text-yellow-300">+91-9313853583</p>
+            </a>
           </div>
+
+          <div>
+
+            
+          <a href='https://www.facebook.com/share/15sLapRYBL/?mibextid=wwXIfr'>
+            <div className="flex gap-3 ">
+
+            
+              <span className="inline-block p-2 text-yellow-300 rounded-full bg-blue-100/50">
+                <FaFacebook className="w-5 h-5" />
+              </span>
+
+              <h2 className=" mt-2 text-lg font-medium text-white">Facebook</h2>
+
+            </div>
+            <p className="mt-1.5 text-base text-gray-100">Connect with us on Facebook.</p>
+            <p className="mt-1.5 text-base text-yellow-300">EXPO ESSENTIALS</p>
+            </a>
+          </div>
+         
         </div>
+       
 
 
         <div>

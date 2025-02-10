@@ -26,8 +26,8 @@ export default function Feature({ locale, langName = 'en' }) {
 						<div className='absolute w-0 h-full bg-base-content z-[0]'></div>
 					</div>
 
-					<h3 className='font-bold text-3xl md:text-5xl bg-gradient-to-r from-base-content from-50% to-[#9c9c9c] md:text-center bg-clip-text text-transparent !leading-[1.25em]'>
-						{locale.h3}
+					<h3 className='font-bold text-3xl md:text-5xl  md:text-center !leading-[1.25em]'>
+					What Our Clients Are Saying About Us
 
 					</h3>
 

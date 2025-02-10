@@ -94,7 +94,7 @@ export default function Page({ params }) {
     const list = TestimonialsList[`TESTIMONIAL_${langName.toUpperCase()}`] || [];
 
     return (
-        <main className='container mx-auto px-5'>
+        <main className='container mx-auto'>
 
 
             {/* Heading section */}
@@ -176,15 +176,15 @@ export default function Page({ params }) {
 
 
 
-            <section className='flex flex-col gap-y-10 mb-32'>
+            <section className='flex flex-col text-xl gap-y-10 mb-32'>
                 {/* bespoke vala */}
 
 
-                <div id='1' class="grid grid-cols-2 py-5 bg-[#5DA5A4]">
+                <div id='1' class="grid grid-cols-5 py-5 bg-[#5DA5A4]">
 
 
 
-                    <div class="sticky top-0 col-span-1 h-[90vh] ">
+                    <div class="sticky top-0 col-span-2 h-screen ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -231,10 +231,10 @@ export default function Page({ params }) {
                                 </ul>
                             </div>
 
-                            <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                            {/* <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
 
                                 We are a bespoke exhibition stand company that stands out from the rest. Our experienced team is with you every step of the way—from your first call to the design, construction, delivery, and installation of your custom exhibition stand. No matter where you&apos;re exhibiting, our tailored display stands are the ultimate solution for showcasing your brand and products effectively!
-                            </div>
+                            </div> */}
 
 
                         </motion.div>
@@ -243,17 +243,17 @@ export default function Page({ params }) {
                     </div>
 
 
-                    <div class="col-span-1 flex justify-center items-center gap-6 flex-col ">
+                    <div class="col-span-3 flex justify-center items-center gap-6 flex-col ">
 
-                        <Image src="/service/bespoke/1.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/bespoke/2.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/bespoke/3.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/bespoke/4.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/bespoke/5.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/bespoke/6.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/bespoke/7.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/bespoke/8.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/bespoke/9.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/service/bespoke/1.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/bespoke/2.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/bespoke/3.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/bespoke/4.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/bespoke/5.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/bespoke/6.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/bespoke/7.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/bespoke/8.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/bespoke/9.png" alt="Picture of the author" width={600} height={500} />
                     </div>
                 </div>
 
@@ -264,11 +264,11 @@ export default function Page({ params }) {
                 <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
 
                 {/* MODULAR TRADE SHOW BOOTH   */}
-                <div id='2' class="grid grid-cols-2 bg-[#D98880] py-5 ">
+                <div id='2' class="grid grid-cols-5 bg-[#D98880] py-5 ">
 
 
 
-                    <div class="sticky top-0 col-span-1 h-screen  ">
+                    <div class="sticky top-0 col-span-2 h-screen  ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -313,15 +313,15 @@ export default function Page({ params }) {
                     </div>
 
 
-                    <div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
+                    <div class="col-span-3 flex justify-center items-center gap-6 flex-col  ">
 
-                        <Image src="/service/modular/1.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/modular/2.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/modular/3.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/modular/4.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/modular/5.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/modular/6.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/modular/7.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/service/modular/1.png" alt="Picture of the author" width={600} height={500}  />
+                        <Image src="/service/modular/2.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/modular/3.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/modular/4.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/modular/5.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/modular/6.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/modular/7.png" alt="Picture of the author" width={600} height={500} />
                     </div>
                 </div>
 
@@ -333,11 +333,11 @@ export default function Page({ params }) {
 
 
                 {/* POP UP & FOLDABLE EXHIBITION STAND IDEAS   */}
-                <div id='3' class="grid grid-cols-2 py-5 bg-[#7A9EAB]">
+                <div id='3' class="grid grid-cols-5 py-5 bg-[#7A9EAB]">
 
 
 
-                    <div class="sticky top-0 col-span-1 h-screen  ">
+                    <div class="sticky top-0 col-span-2 h-screen  ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -380,26 +380,26 @@ export default function Page({ params }) {
                     </div>
 
 
-                    <div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
+                    <div class="col-span-3 flex justify-center items-center gap-6 flex-col  ">
 
-                        <Image src="/service/popup/1.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/popup/2.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/popup/3.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/popup/4.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/popup/5.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/popup/6.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/popup/7.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/service/popup/1.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/popup/2.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/popup/3.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/popup/4.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/popup/5.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/popup/6.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/popup/7.png" alt="Picture of the author" width={600} height={500} />
                     </div>
                 </div>
 
 
 
                 {/* SMALL DISPLAY STANDS  */}
-                <div id='4' class="grid grid-cols-2 py-5  bg-[#A58B6F]">
+                <div id='4' class="grid grid-cols-5 py-5  bg-[#A58B6F]">
 
 
 
-                    <div class="sticky top-0 col-span-1 h-screen  ">
+                    <div class="sticky top-0 col-span-2 h-screen  ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -439,17 +439,17 @@ export default function Page({ params }) {
                     </div>
 
 
-                    <div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
+                    <div class="col-span-3 flex justify-center items-center gap-6 flex-col  ">
 
-                        <Image src="/service/small/1.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/small/2.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/small/3.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/small/4.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/small/5.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/small/6.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/small/7.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/small/8.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/small/9.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/service/small/1.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/small/2.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/small/3.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/small/4.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/small/5.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/small/6.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/small/7.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/small/8.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/small/9.png" alt="Picture of the author" width={600} height={500} />
                     </div>
                 </div>
 
@@ -465,11 +465,11 @@ export default function Page({ params }) {
 
                 {/*  LARGE DISPLAY STANDS   */}
 
-                <div id='5' class="grid grid-cols-2 py-5 bg-[#8A9A5B]">
+                <div id='5' class="grid grid-cols-5 py-5 bg-[#8A9A5B]">
 
 
 
-                    <div class="sticky top-0 col-span-1 h-screen  ">
+                    <div class="sticky top-0 col-span-2 h-screen  ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -510,14 +510,14 @@ export default function Page({ params }) {
                     </div>
 
 
-                    <div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
+                    <div class="col-span-3 flex justify-center items-center gap-6 flex-col  ">
 
-                        <Image src="/service/large/1.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/large/2.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/large/3.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/large/4.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/large/5.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/large/6.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/service/large/1.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/large/2.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/large/3.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/large/4.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/large/5.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/large/6.png" alt="Picture of the author" width={600} height={500} />
                     </div>
                 </div>
 
@@ -528,11 +528,11 @@ export default function Page({ params }) {
 
                 {/* CUSTOM DISPLAY PLINTHS AND PEDESTALS */}
 
-                <div id='6' class="grid grid-cols-2 py-5 bg-[#9D94B7]">
+                <div id='6' class="grid grid-cols-5 py-5 bg-[#9D94B7]">
 
 
 
-                    <div class="sticky top-0 col-span-1 h-screen w-full ">
+                    <div class="sticky top-0 col-span-2 h-screen w-full ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -595,24 +595,24 @@ export default function Page({ params }) {
                     </div>
 
 
-                    <div class="col-span-1 flex justify-center items-center gap-6 flex-col  ">
+                    <div class="col-span-3 flex justify-center items-center gap-6 flex-col  ">
 
-                        <Image src="/service/plinth/1.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/2.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/3.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/4.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/5.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/6.png" alt="Picture of the author" width={500} height={500} />
-                        {/* <Image src="/service/plinth/7.png" alt="Picture of the author" width={500} height={500} /> */}
-                        <Image src="/service/plinth/8.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/9.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/10.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/11.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/12.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/13.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/14.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/15.png" alt="Picture of the author" width={500} height={500} />
-                        <Image src="/service/plinth/16.png" alt="Picture of the author" width={500} height={500} />
+                        <Image src="/service/plinth/1.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/2.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/3.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/4.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/5.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/6.png" alt="Picture of the author" width={600} height={500} />
+                        {/* <Image src="/service/plinth/7.png" alt="Picture of the author" width={600} height={500} /> */}
+                        <Image src="/service/plinth/8.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/9.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/10.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/11.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/12.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/13.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/14.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/15.png" alt="Picture of the author" width={600} height={500} />
+                        <Image src="/service/plinth/16.png" alt="Picture of the author" width={600} height={500} />
 
                     </div>
                 </div>

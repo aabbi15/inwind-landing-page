@@ -13,6 +13,38 @@ import { defaultLocale, getDictionary } from '@/lib/i18n';
 import Cta from '@/components/home/cta';
 import { FaBrain } from 'react-icons/fa';
 import { MdTravelExplore } from 'react-icons/md';
+import { 
+    FaPlay, 
+    FaCube, 
+    FaPalette, 
+    FaTools, 
+    FaArrowRight, 
+    FaCheckCircle 
+  } from 'react-icons/fa';
+  
+    const standTypes = [
+      {
+        title: 'Modular Stands',
+        description: 'Great for flexibility and reusability. Ideal for regular exhibitions.',
+        image: '/service/modular/1.png'
+      },
+      {
+        title: 'Bespoke Stands',
+        description: 'Perfect for creating a completely unique and eye-catching display.',
+        image: '/service/bespoke/1.png'
+      },
+      {
+        title: 'Pop-Up Stands',
+        description: 'A convenient, cost-effective option with quick setup.',
+        image:'/service/popup/1.png'
+      },
+      {
+        title: 'Custom Stands',
+        description: 'Tailored solutions for specific exhibition needs and requirements.',
+        image: '/service/plinth/1.png'
+      }
+
+    ];
 
 const exhibitionIdeas = [
     {
@@ -106,31 +138,18 @@ export default function Page({ params }) {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
                     >
-                        <h1 className='font-bold text-5xl md:text-7xl bg-gradient-to-r from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] mb-5'>
+                        <h1 className='font-bold text-3xl md:text-5xl  text-center  !leading-[1.25em] mb-5'>
                             {/* {dict.About.h1} */}
-                            Guide
+                            Your Ultimate Guide to a Successful Exhibition Experience
 
                         </h1>
                     </motion.div>
 
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{
-                            delay: 0.4,
-                            duration: 1,
-                        }}
-                    >
-                        <h2 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center mb-5 md:mb-10'>
-                            {/* {dict.About.h2} */}
-
-                            Know how to get the perfect exhibition stand as per your requirements with Expo Essentials™.
-                        </h2>
-                    </motion.div>
+                  
                 </div>
 
 
-                <div className='absolute w-[100%] left-[0] top-[10%] md:top-[20%] h-[200px]'>
+                <div className='absolute w-[100%] left-[0] top-[5%] md:top-[10%] h-[200px]'>
                     <svg
                         xmlns='http://www.w3.org/2000/svg'
                         id='patternId'
@@ -175,849 +194,128 @@ export default function Page({ params }) {
             </section>
 
 
-
-            <section className='flex flex-col gap-y-10 mb-32'>
-
-                <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-                >
-                    <div className='flex flex-col md:flex-row items-stretch justify-between gap-10'>
-
-                        <div className='w-full  ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/60 shadow-xl'>
-                            <div className='flex items-center justify-center py-5 text-center bgblue-500'>
-                                <h2 className='text-3xl font-bold bgred-50'>
-
-                                    {/* {dict.About.why} */}
-                                    PLANNING YOUR EXHIBITION STANDS
-                                </h2>
-                                {/* <BsPatchQuestionFill size={48} /> */}
-                                <div className='text-[36px] px-5'> <FaBrain /> </div>
-
-                            </div>
-                            <p className={`text-xl break-words ${langName === 'ar' && 'text-right'}`} >
-
-                                {/* {dict.About.why_content} */}
-
-                                The <span className='font-bold'>first and most important step </span>is to generate some creative ideas for your exhibition stand
-                                design. It&apos;s the first thing your potential customers or clients will notice, so making it eye
-                                catching and memorable is key!
-                                <br /> <br />
-                                Maximize the impact of your exhibition stand with these planning tips designed to help your
-                                design shine from the start. Many businesses overlook the <span className='font-bold'>power of visual appeal </span>in creating
-                                a standout stand—explore our simple yet effective exhibition stand ideas that can make all
-                                the difference!
-
-                                <br /> <br />
-                                For example, using a bold backdrop with a single eye-catching graphic helped one of our
-                                clients significantly increase foot traffic at their booth, proving that simple yet impactful
-                                design choices can have a major effect. You don&apos;t need to spend hours staring at a blank
-                                piece of paper to start planning your exhibition stand design inspiration - <span className='font-bold'>start with our
-                                    amazing ideas, tips and tricks! </span>
-                            </p>
-                        </div>
-                    </div>
-                </motion.div>
-
-                <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
-
-                    
-                    {/* modular valuable */}
-                <div>
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-                        className='py-5'
-                    >
-                        <h1 className='font-bold pb-10 text-2xl md:text-4xl bg-gradient-to-r  from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] '>
-                            {/* {dict.About.h1} */}
-                            MODULAR EXHIBITION STAND IDEAS
-
-                        </h1>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-                        className='my-10'
-                    >
-                        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
-                           
-                            <div className='w-full md:w-10/12 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/80 shadow-xl'>
-                            <div className='flex items-center justify-between py-5'>
-                                    <h2 className='text-3xl font-bold'>
-
-                                        {/* {dict.About.why} */}
-                                        Benefits of Modular Exhibition Stands
-                                    </h2>
-                                    {/* <BsPatchQuestionFill size={48} /> */}
-                                    <div className='text-[36px] px-5'> <BsGraphUpArrow /> </div>
-                                </div>
-                                <p className={`text-xl break-words ${langName === 'ar' && 'text-right'}`} >
-
-                                    {/* {dict.About.why_content} */}
-
-                                    One of the first things to consider when you&apos;re coming up with the best exhibition stand ideas
-                                    for your business is the lifetime value of your display. Modular exhibition stands are the go-to
-                                    option for companies who regularly exhibit at events and shows around the country, giving
-                                    you a reusable stand to serve as the foundation for updated graphics, products, and other
-                                    visual display elements!
-                                </p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-                        className='my-10'
-                    >
-                        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
-                           
-                            <div className='w-full md:w-10/12 ring-2  ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/80 shadow-xl'>
-                            <div className='flex items-center justify-between py-5'>
-                                    {/* <RiTeamFill size={48} /> */}
-                                    <div className='text-[36px] px-5'> <MdTravelExplore /> </div>
-                                    <h2 className='text-3xl font-bold'>
-
-                                        {/* {dict.About.team} */}
-                                        Explore our modular exhibition stand examples
-                                    </h2>
-                                </div>
-                                <p className={`text-xl break-words ${langName === 'ar' && 'text-right'}`} >
-
-                                    {/* {dict.About.team_content} */}
-                                    Modular exhibition stands offer a range of benefits, including cost efficiency, flexibility, and
-                                    the ease of adapting your stand for various events. This smart approach can save you
-                                    valuable time and money on future stand designs. However, opting for a fully bespoke stand
-                                    can give your business that extra &quot;wow&quot; factor to stand out in a crowded event!
-                                </p>
-                            </div>
-                         
-                        </div>
-                    </motion.div>
-
-
-
-
-                    <div className='grid my-10 md:mx-20 gap-5 md:grid-cols-1 grid-cols-1'>
-                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
-                            <motion.div
-                                className="w-full  group-hover:scale-105 transition-transform duration-300"
-                            >
-                                <Image
-                                    src="/guidea.png"
-                                    alt="Example"
-                                    layout="responsive"
-                                    width={700} // Use actual dimensions or responsive layout
-                                    height={400} // Use actual dimensions or responsive layout
-                                    objectFit="contain"
-                                    className="w-full h-auto"
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
-                            >
-                                <p>A simple yet effective stand.</p>
-                            </div>
-                        </div>
-
-
-                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
-                            <motion.div
-                                className="w-full  group-hover:scale-105 transition-transform duration-300"
-                            >
-                                <Image
-                                    src="/guidec.png"
-                                    alt="Example"
-                                    layout="responsive"
-                                    width={700} // Use actual dimensions or responsive layout
-                                    height={400} // Use actual dimensions or responsive layout
-                                    objectFit="contain"
-                                    className="w-full h-auto"
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
-                            >
-                                <p>A rendered image of a modular exhibition stand design.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                 
-
-                  
-                    
-
-                </div>
-
-                <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
-
-                   {/* popupp vala   */}
-
-                   <div>
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-                        className=''
-                    >
-                        <h1 className='font-bold pb-10 text-2xl md:text-4xl bg-gradient-to-r  from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] '>
-                            {/* {dict.About.h1} */}
-                            POP UP & FOLDABLE EXHIBITION STAND IDEAS
-
-                        </h1>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-                        className='my-10'
-                    >
-                        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
-                            {/* <div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
-                                <Image
-                                    src={'/hero2.jpg'}
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className='hover:scale-105 transition-all'
-                                    alt='about_1'
-                                />
-                            </div> */}
-                            <div className='w-full md:w-10/12 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/30 shadow-xl'>
-                                {/* <div className='flex items-center justify-between py-5'>
-                                    <h2 className='text-3xl font-bold'>
-
-                                        Benefits of Modular Exhibition Stands
-                                    </h2>
-                                    <div className='text-[36px] px-5'> <BsGraphUpArrow /> </div>
-                                </div> */}
-                                <p className={`text-xl py-5 break-words ${langName === 'ar' && 'text-right'}`} >
-
-                                    {/* {dict.About.why_content} */}
-
-                                    Whatever you call them—foldable, collapsible, or pop-up displays—these innovative 
-solutions elevate ease of installation to a whole new level, especially when you&apos;re short on 
-exhibition stand ideas! With their compact design, these stands are incredibly portable, 
-requiring minimal space for transport, quick installation, and effortless takedown when the 
-event wraps up. Forget the hassle of multi-person specialist installation teams and embrace 
-the freedom and efficiency these pop-up exhibition stands bring to your business. Save time, 
-streamline your setup, and focus on what truly matters—exhibiting! 
-                                </p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-
-                  
-
-                    <div className='grid my-10 md:mx-20 gap-5 md:grid-cols-1 grid-cols-1'>
-                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
-                            <motion.div
-                                className="w-full  group-hover:scale-105 transition-transform duration-300"
-                            >
-                                <Image
-                                    src="/guided.png"
-                                    alt="Example"
-                                    layout="responsive"
-                                    width={700} // Use actual dimensions or responsive layout
-                                    height={400} // Use actual dimensions or responsive layout
-                                    objectFit="contain"
-                                    className="w-full h-auto"
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
-                            >
-                                <p>A rendered image of a modern exhibition stand which is light themed.</p>
-                            </div>
-                        </div>
-
-
-                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
-                            <motion.div
-                                className="w-full  group-hover:scale-105 transition-transform duration-300"
-                            >
-                                <Image
-                                    src="/guidee.png"
-                                    alt="Example"
-                                    layout="responsive"
-                                    width={700} // Use actual dimensions or responsive layout
-                                    height={400} // Use actual dimensions or responsive layout
-                                    objectFit="contain"
-                                    className="w-full h-auto"
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
-                            >
-                                <p>Example of a vibrant and colorful exhibition stand.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-              
-
-                <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
-
-                {/* interactivity is key vala  */}
-
-                <div>
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-                        className=''
-                    >
-                        <h1 className='font-bold pb-10 text-2xl md:text-4xl bg-gradient-to-r  from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] '>
-                            {/* {dict.About.h1} */}
-                            INTERACTIVITY IS KEY
-
-                        </h1>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-                        className='my-10'
-                    >
-                        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
-                            {/* <div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
-                                <Image
-                                    src={'/hero2.jpg'}
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className='hover:scale-105 transition-all'
-                                    alt='about_1'
-                                />
-                            </div> */}
-                            <div className='w-full md:w-10/12 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/30 shadow-xl'>
-                                {/* <div className='flex items-center justify-between py-5'>
-                                    <h2 className='text-3xl font-bold'>
-
-                                        Benefits of Modular Exhibition Stands
-                                    </h2>
-                                    <div className='text-[36px] px-5'> <BsGraphUpArrow /> </div>
-                                </div> */}
-                                <p className={`text-xl py-5 break-words ${langName === 'ar' && 'text-right'}`} >
-
-                                    {/* {dict.About.why_content} */}
-
-                                    One of the most overlooked yet essential elements of a successful display is interactivity. 
-Without something engaging for potential clients or customers, you risk losing their attention 
-to the competition. We believe your exhibition stand design should always focus on the 
-experience—making it interactive is the key to becoming the &apos;must-see&apos; stand at any 
-exhibition or trade show. Time and again, we&apos;ve seen the benefits of incorporating games, 
-touchscreen displays, augmented reality, and more into your booth. By offering more than 
-just a product showcase, your interactive exhibition stand ideas are sure to stand out! Once 
-you&apos;ve captured their interest, it&apos;s smooth sailing—attendees will be much more open to your 
-brand and services after having an engaging experience.
-                                </p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-
-                  
-
-                   
-
-                </div>
-
-
-                <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
-
-
-                {/* large ideas vala */}
-
-                <div>
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-                        className=''
-                    >
-                        <h1 className='font-bold pb-10 text-2xl md:text-4xl bg-gradient-to-r  from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] '>
-                            {/* {dict.About.h1} */}
-                            SPLASH OUT WITH LARGE EXHIBITION STAND IDEAS
-
-                        </h1>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-                        className='my-10'
-                    >
-                        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
-                            {/* <div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
-                                <Image
-                                    src={'/hero2.jpg'}
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className='hover:scale-105 transition-all'
-                                    alt='about_1'
-                                />
-                            </div> */}
-                            <div className='w-full md:w-10/12 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/30 shadow-xl'>
-                                {/* <div className='flex items-center justify-between py-5'>
-                                    <h2 className='text-3xl font-bold'>
-
-                                        Benefits of Modular Exhibition Stands
-                                    </h2>
-                                    <div className='text-[36px] px-5'> <BsGraphUpArrow /> </div>
-                                </div> */}
-                                <p className={`text-xl py-5 break-words ${langName === 'ar' && 'text-right'}`} >
-
-                                    {/* {dict.About.why_content} */}
-
-                                    If space isn&apos;t a concern, why not make the most of it with a spacious and impressive large 
-exhibition stand? With the extra room, you can get creative and design a multi-functional 
-layout that maximizes every opportunity. Divide the space into distinct areas to showcase 
-different products, highlight unique aspects of your service, or even create an interactive 
-zone to captivate and engage visitors. Explore the exhibition stand images below for 
-inspiration,whether you&apos;re envisioning a 6m x 6m, 8m x 4m, or 10m x 10m stand that 
-perfectly fits your brand! 
-                                </p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-
-                  
-
-                    <div className='grid my-10 md:mx-20 gap-5 md:grid-cols-1 grid-cols-1'>
-                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
-                            <motion.div
-                                className="w-full  group-hover:scale-105 transition-transform duration-300"
-                            >
-                                <Image
-                                    src="/modular1.png"
-                                    alt="Example"
-                                    layout="responsive"
-                                    width={700} // Use actual dimensions or responsive layout
-                                    height={400} // Use actual dimensions or responsive layout
-                                    objectFit="contain"
-                                    className="w-full h-auto"
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
-                            >
-                                <p>A sleek and simple blue stand.</p>
-                            </div>
-                        </div>
-
-                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
-                            <motion.div
-                                className="w-full  group-hover:scale-105 transition-transform duration-300"
-                            >
-                                <Image
-                                    src="/guidef.png"
-                                    alt="Example"
-                                    layout="responsive"
-                                    width={700} // Use actual dimensions or responsive layout
-                                    height={400} // Use actual dimensions or responsive layout
-                                    objectFit="contain"
-                                    className="w-full h-auto"
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
-                            >
-                                <p>Example of a wooden exhibition stand.</p>
-                            </div>
-                        </div>
-
-
-                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
-                            <motion.div
-                                className="w-full  group-hover:scale-105 transition-transform duration-300"
-                            >
-                                <Image
-                                    src="/guideg.png"
-                                    alt="Example"
-                                    layout="responsive"
-                                    width={700} // Use actual dimensions or responsive layout
-                                    height={400} // Use actual dimensions or responsive layout
-                                    objectFit="contain"
-                                    className="w-full h-auto"
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
-                            >
-                                <p>Example of an exhibition stand for displaying a car.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
-                    
-
-                    {/* grid vala */}
-                <div>
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-                        className=''
-                    >
-                        <h1 className='font-bold pb-10 text-2xl md:text-4xl bg-gradient-to-r  from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] '>
-                            {/* {dict.About.h1} */}
-                            INTERACTIVITY IS KEY
-
-                        </h1>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-                        className='my-10'
-                    >
-                        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
-                            {/* <div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
-                                <Image
-                                    src={'/hero2.jpg'}
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className='hover:scale-105 transition-all'
-                                    alt='about_1'
-                                />
-                            </div> */}
-                            <div className='w-full md:w-10/12 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/30 shadow-xl'>
-                                {/* <div className='flex items-center justify-between py-5'>
-                                    <h2 className='text-3xl font-bold'>
-
-                                        Benefits of Modular Exhibition Stands
-                                    </h2>
-                                    <div className='text-[36px] px-5'> <BsGraphUpArrow /> </div>
-                                </div> */}
-                                <p className={`text-xl py-5 break-words ${langName === 'ar' && 'text-right'}`} >
-
-                                    {/* {dict.About.why_content} */}
-
-                                    Embracing modern elements in your exhibition stand can make all the difference—sleek 
-designs and striking visuals are far more likely to capture attention and engage visitors. 
-Traditional flat walls and basic shapes are a thing of the past. As exhibition stand design 
-continues to evolve, businesses are pushing the boundaries with creative, out-of-the-box 
-ideas, especially when it comes to experimenting with shapes. Instead of sticking with a 
-standard flat design, consider a bespoke stand featuring curves, counters, and other 
-dynamic features. Not only does this demonstrate creative thinking and innovation, but it 
-ensures your stand stands out in a sea of uninspired displays. 
-                                </p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {exhibitionIdeas.map((idea, index) => (
-          <div
-            key={index}
-            className="bg-base-200/40 ring-1  shadow-lg rounded-lg p-4 flex flex-col items-center transition-transform hover:scale-105"
-          >
-            <div className="text-4xl mb-4">{idea.icon}</div>
-            <h3 className="text-lg font-semibold text-center mb-2">
-              {idea.title}
-            </h3>
-            <p className="text-sm text-gray-600 text-center">{idea.description}</p>
+            <section className="py-16 px-4 sm:px-6 lg:px-8 ">
+        <div className=" mx-auto">
+         
+          <p className=" text-gray-800 max-w3xl text-xl mx-auto text-center mb-8">
+            Planning your exhibition stand can feel overwhelming, but it doesn't have to be! Our guide is designed to make the process smooth, insightful, and enjoyable. Whether you're a first-timer or a seasoned exhibitor, we've got you covered with everything you need to ensure your display stands out and delivers results.
+          </p>
+        </div>
+      </section>
+
+      {/* Exhibition Stand Contractors Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            EXHIBITION STAND CONTRACTORS
+          </h2>
+          <div className="flex flex-col lg:flex-row gap-12 text-xl items-center">
+            <div className="w-full lg:w-1/4   rounded-lg flex items-center justify-center">
+             
+            <video width="320" height="240" autoPlay muted loop preload="none">
+      <source src="/guide-video.mp4" type="video/mp4" />
+      
+      Your browser does not support the video tag.
+    </video>
+            </div>
+            <div className="w-full lg:w-3/4 space-y-6">
+              <p className="text-gray-800">
+                At <span className="font-bold">EXPO ESSENTIALS</span>, we specialise in designing and building fully customised exhibition stands that not only look stunning but are also practical and durable. Whether you're showcasing your brand at a trade show, conference, or outdoor event, our expert team is here to make sure your stand leaves a lasting impression.
+              </p>
+              <p className="text-gray-600">
+                We pride ourselves on combining style, functionality, and precision to create displays that capture attention and attract the right audience. From sleek, portable stands to eye-catching, bespoke outdoor displays, we work with you to ensure every detail reflects your brand's identity.
+              </p>
+             
+              <p className="text-gray-800">
+                Our team of designers and project managers are dedicated to bringing your vision to life. Simply share your ideas with us, and we&apos;ll create a stand that is as unique as your business. We use only the finest materials to ensure your exhibition stand not only stands out but stands the test of time. Plus, we can take care of everything - from delivery to installation - so you can focus on what really matters: making an impact at your next event.
+              </p>
+              <p className="text-gray-800 font-semibold">
+                Let us help you make your next exhibition a memorable one!
+              </p>
+            </div>
           </div>
-        ))}
-      </div>
+        </div>
+      </section>
 
-
-                  
- 
-                    
-
-
-
-
+      {/* Stand Types Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 ">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Choosing the Right Stand Type
+          </h2>
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto text-center mb-12">
+            Choosing the perfect stand type is one of the first steps in making your exhibition a success. Do you go for something modular, bespoke, or pop-up? Each has its unique advantages:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {standTypes.map((type, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img 
+                  src={type.image} 
+                  alt={type.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{type.title}</h3>
+                  <p className="text-gray-800">{type.description}</p>
                 </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-gray-800 text-xl mt-8">
+            We'll help you choose the one that suits your needs, space, and budget!
+          </p>
+        </div>
+      </section>
 
-                <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
+      {/* Materials Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-white rounded-lg shadow-xl p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              Different Materials for Form and Function
+            </h2>
+            <div className="flex items-center gap-8">
+              <FaTools className="w-16 h-16 text-blue-600 flex-shrink-0 hidden lg:block" />
+              <p className="text-gray-800  text-xl">
+                When designing your stand, the materials you choose can make all the difference in both form and function. You need a balance of durability, transportability, and aesthetics. High-quality materials can make your stand look polished while offering ease of setup and teardown. Whether it's smooth acrylics, strong wooden elements, or vibrant fabrics, we guide you through selecting the right materials for your goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Graphics & Branding Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 ">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-white rounded-lg shadow-xl p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              Confident Graphics & Branding
+            </h2>
+            <div className="flex items-center gap-8">
+              <FaPalette className="w-16 h-16 text-xl text-blue-600 flex-shrink-0 hidden lg:block" />
+              <p className="text-gray-800  text-xl">
+                The graphics and branding on your stand are what speak to your audience long before they engage with you. Bold, high-quality graphics that align with your brand's identity help capture attention and make a memorable first impression. From logos to colour schemes and messaging, confident branding creates an unforgettable impact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                {/* confident branding vala */}
-                <div>
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-                        className=''
-                    >
-                        <h1 className='font-bold pb-10 text-2xl md:text-4xl bg-gradient-to-r  from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] '>
-                            {/* {dict.About.h1} */}
-                            CONFIDENT GRAPHICS & BRANDING 
-
-                        </h1>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-                        className='my-10'
-                    >
-                        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
-                            {/* <div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
-                                <Image
-                                    src={'/hero2.jpg'}
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className='hover:scale-105 transition-all'
-                                    alt='about_1'
-                                />
-                            </div> */}
-                            <div className='w-full md:w-10/12 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/30 shadow-xl'>
-                                {/* <div className='flex items-center justify-between py-5'>
-                                    <h2 className='text-3xl font-bold'>
-
-                                        Benefits of Modular Exhibition Stands
-                                    </h2>
-                                    <div className='text-[36px] px-5'> <BsGraphUpArrow /> </div>
-                                </div> */}
-                                <p className={`text-xl py-5 break-words ${langName === 'ar' && 'text-right'}`} >
-
-                                    {/* {dict.About.why_content} */}
-
-                                    Just like with your colour choices, getting your graphics and branding right is crucial for 
-creating a successful exhibition display. Before reaching out to your exhibition stand 
-contractor, take time to carefully plan your stand ideas and develop impactful, relevant 
-graphics that will guide your design. We recommend a well-balanced mix of compelling 
-imagery, bold colors, and short, meaningful brand messages or slogans to make your stand 
-truly stand out! A key tip—avoid lengthy text. The real draw of trade shows is the opportunity 
-to interact with exhibitors directly, not to read long paragraphs!  
-                                </p>
-                            </div>
-                        </div>
-                    </motion.div>
+      {/* CTA Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-600">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-white mb-6">
+            Get Started Today!
+          </h2>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
+            Now that you're armed with all the essential information, it's time to take action and bring your exhibition vision to life! Whether you're looking to create a striking bespoke stand or an easy-to-assemble pop-up booth, we're here to guide you every step of the way. Get in touch with us today and let's start planning your perfect exhibition experience.
+          </p>
+         
+        </div>
+      </section>
 
 
-                  
-
-                    <div className='grid my-10 md:mx-20 gap-5 md:grid-cols-1 grid-cols-1'>
-                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
-                            <motion.div
-                                className="w-full  group-hover:scale-105 transition-transform duration-300"
-                            >
-                                <Image
-                                    src="/guideh.png"
-                                    alt="Example"
-                                    layout="responsive"
-                                    width={700} // Use actual dimensions or responsive layout
-                                    height={400} // Use actual dimensions or responsive layout
-                                    objectFit="contain"
-                                    className="w-full h-auto"
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
-                            >
-                                <p>A large wooden exhibition stand.</p>
-                            </div>
-                        </div>
-
-
-                        <div className=" overflow-hidden rounded-xl transition-all duration-300 ease-in-out">
-                            <motion.div
-                                className="w-full  group-hover:scale-105 transition-transform duration-300"
-                            >
-                                <Image
-                                    src="/white.png"
-                                    alt="Example"
-                                    layout="responsive"
-                                    width={700} // Use actual dimensions or responsive layout
-                                    height={400} // Use actual dimensions or responsive layout
-                                    objectFit="contain"
-                                    className="w-full h-auto"
-                                />
-                            </motion.div>
-
-                            {/* Hover Text */}
-                            <div
-                                className="flex items-center justify-center bg-black bg-opacity-70 text-white text-lg font-bold px-4"
-                            >
-                                <p>This is how a modern minimalistic white exhibition stand looks like.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
-
-                                {/* Different Materials vala */}
-                <div>
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-                        className=''
-                    >
-                        <h1 className='font-bold pb-10 text-2xl md:text-4xl bg-gradient-to-r  from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] '>
-                            {/* {dict.About.h1} */}
-                            DIFFERENT MATERIALS FOR FORM AND FUNCTION 
-
-                        </h1>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-                        className='my-10'
-                    >
-                        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
-                            {/* <div className='w-full md:w-2/5 relative rounded-2xl overflow-hidden shadow-xl'>
-                                <Image
-                                    src={'/hero2.jpg'}
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className='hover:scale-105 transition-all'
-                                    alt='about_1'
-                                />
-                            </div> */}
-                            <div className='w-full md:w-10/12 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/30 shadow-xl'>
-                                {/* <div className='flex items-center justify-between py-5'>
-                                    <h2 className='text-3xl font-bold'>
-
-                                        Benefits of Modular Exhibition Stands
-                                    </h2>
-                                    <div className='text-[36px] px-5'> <BsGraphUpArrow /> </div>
-                                </div> */}
-                                <p className={`text-xl py-5 break-words ${langName === 'ar' && 'text-right'}`} >
-
-                                    {/* {dict.About.why_content} */}
-
-                                    Selecting the right materials is a crucial step in the exhibition stand design process, offering 
-plenty of options to consider! If you&apos;re aiming for a balance of natural charm and design 
-flexibility, wood is an excellent choice for the main elements of your display. For a lightweight 
-yet striking option, acrylic makes for stunning furniture and shelving, while fabric works 
-wonderfully for tensioned displays, graphics, and banners. The materials you choose play a 
-significant role in both the aesthetics and functionality of your stand, so don&apos;t overlook this 
-aspect when brainstorming your exhibition ideas. Take a look at the exhibition stand images 
-below to find the materials that best suit your brands. 
-                                </p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-
-                  
-
-                  
-
-                </div>
-
-
-                <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
-
-
-                                    {/* Have convos vala */}
-                <div>
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
-                        className=''
-                    >
-                        <h1 className='font-bold pb-10 text-2xl md:text-4xl bg-gradient-to-r  from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] '>
-                            {/* {dict.About.h1} */}
-                            HAVE CONVERSATIONS & ANSWER QUESTIONS 
-
-                        </h1>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
-                        className='my-10'
-                    >
-                        <div className='flex flex-col md:flex-row items-center bggreen-500 justify-center gap-10'>
-                            <div className='w-full h-96 md:w-2/5 bgred-500 relative rounded-2xl overflow-hidden shadow-xl'>
-                                <Image
-                                    src={'/image2.png'}
-                                    layout='fill'
-                                    objectFit='cover'
-                                    className='hover:scale-105 transition-all'
-                                    alt='about_1'
-                                />
-                                
-                            </div>
-                            <div className='w-full md:w-3/5 ring-2 ring-base-content/10 py-5 px-10 rounded-2xl bg-base-200/30 shadow-xl'>
-                                {/* <div className='flex items-center justify-between py-5'>
-                                    <h2 className='text-3xl font-bold'>
-
-                                        Benefits of Modular Exhibition Stands
-                                    </h2>
-                                    <div className='text-[36px] px-5'> <BsGraphUpArrow /> </div>
-                                </div> */}
-                                <p className={`text-xl py-5 break-words ${langName === 'ar' && 'text-right'}`} >
-
-                                    {/* {dict.About.why_content} */}
-
-                                    People love trade shows and events because they offer a unique opportunity to connect 
-directly with brands. Potential customers and clients appreciate speaking with brand 
-representatives, as it allows them to get immediate answers to their questions, instead of 
-wasting time on websites or back-and-forth emails. The perfect balance of a friendly, 
-approachable team and a sales-focused strategy can greatly increase the likelihood that 
-your brand will be remembered by those who engage with you. 
-By considering all these factors when planning and designing your display, you&apos;re sure to 
-create a standout result. We understand the importance of crafting a visually striking and 
-memorable exhibition stand, and we hope the ideas we&apos;ve shared have inspired you.
-                                </p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-
-                  
-
-                   
-
-                </div>
-
-
-                <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
-
-
-                
-            </section>
+           
 
 
 

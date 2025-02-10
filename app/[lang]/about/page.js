@@ -115,15 +115,15 @@ export default function Page({ params }) {
 		<div className="col-span-7 md:col-span-4 text-gray-100">
           <h2 className="text-3xl font-bold  mb-8 ">Who We Are</h2>
           
-            <p className=" text-gray-100 mb-4">
+            <p className=" text-gray-100 text-xl mb-4">
               We&apos;re a passionate team of project managers, joiners, and designers, committed to 
               delivering an exceptional service in the industry.
             </p>
-            <p className=" text-gray-100 mb-4">
+            <p className=" text-gray-100 mb-4 text-xl">
               With years of experience and a creative approach, we ensure each project is customised 
               to your needs, and our growing portfolio of successful global projects speaks for itself.
             </p>
-            <p className=" text-gray-100">
+            <p className=" text-gray-100 text-xl">
               Driven by enthusiasm and a love for what we do, we thrive on taking on challenging 
               concepts and pushing boundaries—no matter what, we&apos;re determined to make your vision a reality.
             </p>
@@ -151,13 +151,13 @@ alt='about_1'
 		{/* <a href='https://api.whatsapp.com/send?phone=917490070001'> */}
           <h2 className="text-3xl font-bold  mb-8 "> Tailored Solutions for Your Success</h2>
           {/* </a> */}
-            <p className=" text-gray-100 mb-4">
+            <p className=" text-gray-100 text-xl mb-4">
 			We dive deep into your brand&apos;s DNA and trade show objectives, crafting a vision that 
               aligns perfectly with your market domination goals. We&apos;re dedicated to providing our 
               clients with expert advice throughout the entire process, whether for exhibitions or 
               pop-up installations.
             </p>
-            <p className=" text-gray-100 mb-4">
+            <p className=" text-gray-100 mb-4 text-xl">
 			From guiding you through your budget and planning your installation to choosing the 
 			ideal design, we&apos;re here to make it all run smoothly.
 			</p>
@@ -166,7 +166,7 @@ alt='about_1'
 		  <div className='col-span-7 md:col-span-3 relative rounded-2xl overflow-hidden shadow-xl'>
 		  <Image 
 
-src={'/guide.png'}
+src={'/newguide.png'}
 width={600}
 height={400}
 layout='responsive'
