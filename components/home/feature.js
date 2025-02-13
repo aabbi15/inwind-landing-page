@@ -9,37 +9,37 @@ import ProjectCard from './pricing/card2';
 const Services = [
 	{
 		name: 'BESPOKE EXHIBITION STANDS',
-		imagesrc: '/guidea.png',
+		imagesrc: '/main/bespoke.jpg',
 		color :'#5DA5A4',
 		link: '/en/services#1'
 	},
 	{
 		name: ' MODULAR TRADE SHOW BOOTH  ',
-		imagesrc: '/guidef.png',
+		imagesrc: '/main/modular.jpg',
 		color :'#D98880',
 		link: '/en/services#2'
 	},
 	{
 		name: 'POP UP & FOLDABLE EXHIBITION STAND',
-		imagesrc: '/guidec.png',
+		imagesrc: '/main/popup.jpg',
 		color :'#7A9EAB',
 		link: '/en/services#3'
 	},
 	{
 		name: 'SMALL DISPLAY STANDS ',
-		imagesrc: '/guided.png',
+		imagesrc: '/main/small.jpg',
 		color :'#A58B6F',
 		link: '/en/services#4'
 	},
 	{
 		name: 'LARGE DISPLAY STANDS',
-		imagesrc: '/guidee.png',
+		imagesrc: '/main/large.jpg',
 		color :'#8A9A5B',
 		link: '/en/services#5'
 	},
 	{
 		name: 'CUSTOM DISPLAY PLINTHS AND PEDESTALS ',
-		imagesrc: '/service/plinth/1.png',
+		imagesrc: '/main/plinth.jpg',
 		color :'#9D94B7',
 		link: '/en/services#6'
 	},
