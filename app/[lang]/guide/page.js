@@ -138,7 +138,7 @@ export default function Page({ params }) {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
                     >
-                        <h1 className='font-bold text-3xl md:text-5xl  text-gray-700 text-center  !leading-[1.25em] mb-5'>
+                        <h1 className='font-bold text-5xl md:text-7xl  text-gray-700 text-center  !leading-[1.25em] mb-5'>
                             {/* {dict.About.h1} */}
                             Guide
 
@@ -277,11 +277,16 @@ export default function Page({ params }) {
         </div>
       </section>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 ">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-14 text-center">
+          Custom Advanced Features
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {exhibitionIdeas.map((idea, index) => (
           <div
             key={index}
-            className="bg-gray-900 ring-2  shadow-lg rounded-lg p-4 flex flex-col items-center transition-transform hover:scale-105"
+            className="bg-gray-700 ring-1  shadow-lg rounded-lg p-4 flex flex-col items-center transition-transform hover:scale-105"
           >
             <div className="text-4xl mb-4">{idea.icon}</div>
             <h3 className="text-lg font-semibold text-white text-center mb-2">
@@ -291,6 +296,10 @@ export default function Page({ params }) {
           </div>
         ))}
       </div>
+        </div>
+      </section>
+
+      
 
 
                   

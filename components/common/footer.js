@@ -31,7 +31,7 @@ export default function Footer() {
 						alt='logo'
 						/>	 */}
 		
-		<footer className='w-full px-5 py-10 bg-[#202020] text-[#f7f7f7] '>
+		<footer className='w-full px-5 py-10 text-[#202020] [#f7f7f7] border-t border-[#202020]'>
 			<div className='container mx-auto flex flex-col md:flex-row justify-between bgwhite items-center md:items-end gap-2 text-sm'>
 				<div className='flex flex-col items-center md:items-start bg-yellow300'>
 					
@@ -44,11 +44,11 @@ export default function Footer() {
 									<Image
 										width={200}
 										height={200}
-										src={'/onlylogowhite.png'}
+										src={'/onlylogo.png'}
 										className='rotator transition-all hover:scale-110 w-6 md:w-14 h-6 md:h-14'
 										alt='logo'
 									></Image>
-									<div className='flex flex-col text-white justify-around h-14 '>
+									<div className='flex flex-col  justify-around h-14 '>
 									<h2 className='ml-3 font-bold text-[22px] '>EXPO ESSENTIALS</h2>
 									<p className='ml-3 text-[14px]'>BOOTH CONSTRUCTION</p>
 									</div>

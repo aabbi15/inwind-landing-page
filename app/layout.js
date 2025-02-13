@@ -43,7 +43,7 @@ export default async function RootLayout({ children }) {
 				<div className='w-full min-h-svh  text-base-content bg-base-100'>
 					<Navbar />
 					<div className=''>{children}</div>
-					{/* <Footer /> */}
+					<Footer />
 				</div>
 			</body>
 		</html>
