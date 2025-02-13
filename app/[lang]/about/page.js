@@ -147,9 +147,9 @@ alt='about_1'
 
 	  <section className="bg-gray-950 ring-1 py-16">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-7 items-start gap-12">
-		<div className="col-span-7 md:col-span-4 text-gray-100">
+		<div className="col-span-7 md:col-span-4 flex justify-center flex-col items-center h-full text-gray-100">
 		{/* <a href='https://api.whatsapp.com/send?phone=917490070001'> */}
-          <h2 className="text-3xl font-bold  mb-8 "> Tailored Solutions for Your Success</h2>
+          <h2 className="text-3xl font-bold  self-start mb-8 "> Tailored Solutions for Your Success</h2>
           {/* </a> */}
             <p className=" text-gray-100 text-xl mb-4">
 			We dive deep into your brand&apos;s DNA and trade show objectives, crafting a vision that 
@@ -157,21 +157,21 @@ alt='about_1'
               clients with expert advice throughout the entire process, whether for exhibitions or 
               pop-up installations.
             </p>
-            <p className=" text-gray-100 mb-4 text-xl">
+            <p className=" text-gray-100 mb-4 text-xl flex items-center"> 
 			From guiding you through your budget and planning your installation to choosing the 
 			ideal design, we&apos;re here to make it all run smoothly.
 			</p>
             
           </div>
-		  <div className='col-span-7 md:col-span-3 relative rounded-2xl overflow-hidden shadow-xl'>
+		  <div className='col-span-7 md:col-span-3 relative rounded-2xl  shadow-xl'>
 		  <Image 
 
 src={'/newguide.png'}
-width={600}
+width={400}
 height={400}
-layout='responsive'
+// layout='responsive'
 objectFit='cover'
-className='hover:scale-105 transition-all'
+className='hover:scale-105 rounded-2xl transition-all'
 alt='about_1'
 />
 		  </div>
