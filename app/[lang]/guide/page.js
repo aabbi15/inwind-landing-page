@@ -277,6 +277,31 @@ export default function Page({ params }) {
         </div>
       </section>
 
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {exhibitionIdeas.map((idea, index) => (
+          <div
+            key={index}
+            className="bg-gray-900 ring-2  shadow-lg rounded-lg p-4 flex flex-col items-center transition-transform hover:scale-105"
+          >
+            <div className="text-4xl mb-4">{idea.icon}</div>
+            <h3 className="text-lg font-semibold text-white text-center mb-2">
+              {idea.title}
+            </h3>
+            <p className="text-sm text-gray-200 text-center">{idea.description}</p>
+          </div>
+        ))}
+      </div>
+
+
+                  
+ 
+                    
+
+
+
+
+
+
       {/* Materials Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -319,7 +344,7 @@ export default function Page({ params }) {
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-600">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Get Started Today!
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
