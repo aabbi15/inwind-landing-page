@@ -8,6 +8,7 @@ import { IoDocumentText } from 'react-icons/io5';
 import { useEffect, useState } from 'react';
 import { BsPhoneFill } from 'react-icons/bs';
 import CTAButton from '../common/ctabutton';
+import Carousel from './carousel';
 export default function Hero({ locale, CTALocale }) {
 	const [tilt, setTilt] = useState(45);
 	const [duration, setDuration] = useState(0.8);
@@ -67,7 +68,7 @@ export default function Hero({ locale, CTALocale }) {
 					</div>
 				</motion.div>
 
-				<motion.div
+				{/* <motion.div
 					initial={{ opacity: 0, y: 100, rotateX: '45deg' }}
 					animate={{ opacity: 1, y: 0, rotateX: `${tilt}deg` }}
 					transition={{
@@ -84,7 +85,13 @@ export default function Hero({ locale, CTALocale }) {
 						alt='app demo'
 					/>
 
-				</motion.div>
+				</motion.div> */}
+
+				{/* <div className='my-16 bg-red-200'> */}
+				<Carousel />
+				{/* </div> */}
+
+				
 			</section>
 
 			<div className='absolute w-[100%] left-[0] top-[50%] md:top-[10%] h-[300px]'>
