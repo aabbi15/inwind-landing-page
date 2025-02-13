@@ -140,7 +140,7 @@ export default function Page({ params }) {
                     >
                         <h1 className='font-bold text-3xl md:text-5xl  text-gray-700 text-center  !leading-[1.25em] mb-5'>
                             {/* {dict.About.h1} */}
-                            Your Ultimate Guide to a Successful Exhibition Experience
+                            Guide
 
                         </h1>
                     </motion.div>

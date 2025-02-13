@@ -45,7 +45,7 @@ const Services = [
 	},
 	{
 		name: 'Others ',
-		imagesrc: '/newguide.png',
+		imagesrc: '/main/guide.jpg',
 		color :'#9D94B7',
 		link: '/en/guide'
 	}

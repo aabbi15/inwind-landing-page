@@ -564,26 +564,7 @@ export default function Page({ params }) {
                             </div>
 
 
-                            <div className={`text-xl py-1 my-5 px-7 w-fit `} >
-
-                                <div className="flex w-fit overflow-clip flex-col">
-                                    {features.map((feature, index) => (
-                                        <div key={index} className="flex items-start gap-1 group hover:bg-gray-200/50  rounded-lg transition-colors duration-200">
-                                            <span className="text-xl flex-shrink-0 group-hover:scale-110 transition-transform duration-200">
-                                                {feature.icon}
-                                            </span>
-                                            <div>
-                                                <h3 className="text-xl  text-gray-900 mb-2">
-                                                    {feature.title}
-                                                </h3>
-                                                {/* <p className="text-gray-600 leading-relaxed">
-                                                    {feature.description}
-                                                </p> */}
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
+                          
 
 
 
