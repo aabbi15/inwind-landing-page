@@ -101,7 +101,7 @@ export default function Example() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, type: "spring", stiffness: 100, damping: 10 }}
       >
-        <h1 className="font-bold text-5xl md:text-7xl bg-gradient-to-r from-base-content from-50% to-primary text-center bg-clip-text text-transparent !leading-[1.25em] mb-5">
+        <h1 className="font-bold text-5xl md:text-7xl  text-center text-gray-700 !leading-[1.25em] mb-5">
           Contact Us
         </h1>
       </motion.div>

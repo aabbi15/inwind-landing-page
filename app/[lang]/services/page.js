@@ -105,7 +105,7 @@ export default function Page({ params }) {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
                     >
-                        <h1 className='font-bold text-5xl md:text-7xl  text-center text-black !leading-[1.25em] mb-5'>
+                        <h1 className='font-bold text-5xl md:text-7xl  text-center text-gray-700 !leading-[1.25em] mb-5'>
                             {/* {dict.About.h1} */}
                             Our Services
 

@@ -138,7 +138,7 @@ export default function Page({ params }) {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, type: 'spring', stiffness: 100, damping: 10 }}
                     >
-                        <h1 className='font-bold text-3xl md:text-5xl  text-center  !leading-[1.25em] mb-5'>
+                        <h1 className='font-bold text-3xl md:text-5xl  text-gray-700 text-center  !leading-[1.25em] mb-5'>
                             {/* {dict.About.h1} */}
                             Your Ultimate Guide to a Successful Exhibition Experience
 

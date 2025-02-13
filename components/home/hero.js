@@ -40,7 +40,7 @@ export default function Hero({ locale, CTALocale }) {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
 				>
-					<div className='font-bold text-4xl flex flex-col md:text-[66px] text-center  !leading-[1.25em] mb-5'>
+					<div className='font-bold text-4xl flex flex-col md:text-[66px] text-center text-gray-700  !leading-[1.25em] mb-5'>
 				
 				<div> EXPO ESSENTIALS</div>
 				<div className='text-2xl'>BOOTH CONSTRUCTION</div>
@@ -56,7 +56,12 @@ export default function Hero({ locale, CTALocale }) {
 						duration: 1,
 					}}
 				>
+					<h2 className='w-full font-[550] text-gray-700  mx-auto text-xl md:text-2xl text-base-content/90 md:text-center mb-5 md:mb-10'>
 					
+					{/* {locale.h2} */}
+					Beyond Expectation, Beyond Essentials 
+					</h2>
+
 					<div className='w-full md:w-full mx-auto flex flex-col  md:flex-row md:items-center justify-center gap-y-5'>
 						{/* <HeroIcons /> */}
 
