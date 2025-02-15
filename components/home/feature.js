@@ -70,7 +70,7 @@ export default function Feature({ locale, langName = 'en' }) {
 					duration: 0.5,
 				}}
 			>
-				<div className='relative z-10 flex flex-col gap-5 items-start md:items-center mb-10 mx-auto'>
+				<div className='relative z-10 flex flex-col gap-5 items-center mb-10 mx-auto'>
 					<div className='relative inline-flex items-center justify-center gap-2 border-2 border-base-content px-5 md:px-10 py-1 md:py-3 rounded-full text-lg md:text-2xl font-semibold overflow-hidden hover:bg-base-content hover:text-base-100 transition-all'>
 						<div className='inline-flex items-center justify-center gap-2 z-10'>
 							<MdWork /> <h2>
@@ -88,14 +88,11 @@ export default function Feature({ locale, langName = 'en' }) {
 						Services of ExpoEssentials Booth Design Service
 					</h3> */}
 
-					<h4 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center'>
+					<h4 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 text-center'>
 						{/* {locale.description1} */}
 						Premier booth design templates, specifically crafted for expos and trade shows.
 
-						<br />
-						{/* {locale.description2} */}
-						Dedicated to delivering innovative booth designs that stand out and attract visitors.
-						<br />
+						
 						{/* {locale.description3} */}
 					</h4>
 				</div>

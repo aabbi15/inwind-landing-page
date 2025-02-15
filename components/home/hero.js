@@ -32,7 +32,7 @@ export default function Hero({ locale, CTALocale }) {
 	return (
 		<>
 			<section
-				className='relative z-10 flex flex-col items-start md:items-center py-10 md:py-20 overflow-hidden'
+				className='relative z-10 flex flex-col items-center py-10 md:py-20 overflow-hidden'
 				style={{ perspective: '800px' }}
 			>
 				<motion.div
@@ -56,13 +56,13 @@ export default function Hero({ locale, CTALocale }) {
 						duration: 1,
 					}}
 				>
-					<h2 className='w-full font-[550] text-gray-700  mx-auto text-xl md:text-2xl text-base-content/90 md:text-center mb-5 md:mb-10'>
+					<h2 className='w-full font-[550] text-gray-700  mx-auto text-xl md:text-2xl text-base-content/90 text-center mb-5 md:mb-10'>
 					
 					{/* {locale.h2} */}
 					Beyond Expectation, Beyond Essentials 
 					</h2>
 
-					<div className='w-full md:w-full mx-auto flex flex-col  md:flex-row md:items-center justify-center gap-y-5'>
+					<div className='w-full md:w-full mx-auto flex flex-col  md:flex-row items-center justify-center gap-y-5'>
 						{/* <HeroIcons /> */}
 
 						<div className=''>

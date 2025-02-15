@@ -24,8 +24,8 @@ export default function Carousel() {
     }, []);
 
     return (
-        <div className="relative w-full my-16 honeybg" data-carousel="slide">
-            <div className="relative h-full overflow-hidden rounded-lg md:h-[600px]">
+        <div className="relative w-full my-5 md:my-16 " data-carousel="slide">
+            <div className="relative h-[600px] overflow-hidden rounded-lg md:h-[600px]">
                 {[1, 2, 3, 4, 5].map((num, index) => (
                     <div
                         key={num}
@@ -43,7 +43,7 @@ export default function Carousel() {
             </div>
 
             {/* Slide indicators */}
-            <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <div className="absolute z-30 hidden md:flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
                 {[...Array(totalSlides)].map((_, index) => (
                     <button
                         key={index}
@@ -61,7 +61,7 @@ export default function Carousel() {
             {/* Previous button */}
 <button
     onClick={prevSlide}
-    className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    className="absolute top-0 start-0 z-30 hidden md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
 >
     <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
         <svg viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="full" enableBackground="new 0 0 76.00 76.00" fill="#000000">
@@ -78,7 +78,7 @@ export default function Carousel() {
 {/* Next button */}
 <button
     onClick={nextSlide}
-    className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    className="absolute top-0 end-0 z-30 hidden md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
 >
     <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
         <svg viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="full" enableBackground="new 0 0 76.00 76.00" fill="#000000">
