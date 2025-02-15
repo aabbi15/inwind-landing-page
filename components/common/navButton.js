@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Button = () => {
   return (
-    <StyledWrapper>
+    <StyledWrapper className="">
       <a href='/en/contact'>
       <button className="button">Book a Call</button>
       </a>
@@ -12,6 +12,12 @@ const Button = () => {
 }
 
 const StyledWrapper = styled.div`
+
+display: none; /* Hidden by default */
+
+  @media (min-width: 768px) { /* Visible on md (>=768px) screens */
+    display: inline-block;
+  }
   .button {
     padding: 0.75em 1.5em;
     border: none;
