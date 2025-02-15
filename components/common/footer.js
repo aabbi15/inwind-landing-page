@@ -45,15 +45,17 @@ export default function Footer() {
 										width={200}
 										height={200}
 										src={'/onlylogo.png'}
-										className='rotator transition-all hover:scale-110 w-6 md:w-14 h-6 md:h-14'
+										className='rotator transition-all hover:scale-110 w-8 md:w-14 h-8 md:h-14'
 										alt='logo'
 									></Image>
-									<div className='flex flex-col  justify-around h-14 '>
-									<h2 className='ml-3 font-bold text-[22px] '>EXPO ESSENTIALS</h2>
-									<p className='ml-3 text-[14px]'>BOOTH CONSTRUCTION</p>
+									<div className='flex flex-col  justify-around md:h-14 '>
+									<h2 className='ml-3 font-bold text-lg md:text-[22px] '>EXPO ESSENTIALS</h2>
+									<p className='ml-3 text-[10px] md:text-[14px]'>BOOTH CONSTRUCTION</p>
 									</div>
 								</a>
-					<div className='flex flex-wrap mt-10 justify-center gap-x-2 md:gap-x-5 gap-y-1'>
+					
+				</div>
+				<div className='flex flex-wrap text-base justify-center gap-x-2 md:gap-x-5 gap-y-1'>
 						{linkList.map((link, index) => {
 							return (
 								<a
@@ -66,9 +68,8 @@ export default function Footer() {
 							);
 						})}
 					</div>
-				</div>
 
-				<div className='text-xs text-center'>
+				{/* <div className='text-xs text-center'>
 					
 					
 						Created by
@@ -93,7 +94,7 @@ export default function Footer() {
 					>
 						Ritik 
 					</a>
-				</div>
+				</div> */}
 			</div>
 		</footer>
 		</div>

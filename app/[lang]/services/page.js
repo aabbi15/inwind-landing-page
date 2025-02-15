@@ -94,12 +94,12 @@ export default function Page({ params }) {
     const list = TestimonialsList[`TESTIMONIAL_${langName.toUpperCase()}`] || [];
 
     return (
-        <main className='container mx-auto'>
+        <main className='container mx-auto '>
 
 
             {/* Heading section */}
-            <section>
-                <div className='relative z-10 flex flex-col items-start md:items-center pt-10 mb-5 overflow-hidden'>
+            <section className='md:px-0 px-2'>
+                <div className='relative z-10 flex flex-col itemsstart md:items-center pt-10 mb-5 overflow-hidden'>
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -120,7 +120,7 @@ export default function Page({ params }) {
                             duration: 1,
                         }}
                     >
-                        <h2 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/90 font-semibold md:text-center mb-5 md:mb-10'>
+                        <h2 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/90 font-semibold text-center mb-5 md:mb-10'>
                             {/* {dict.About.h2} */}
 
                             Explore our services and discover how we can help you create a standout exhibition stand that captivates your audience and elevates your brand.
@@ -180,11 +180,11 @@ export default function Page({ params }) {
                 {/* bespoke vala */}
 
 
-                <div id='1' class="grid grid-cols-5 py-5 bg-[#5DA5A4]">
+                <div id='1' class="grid grid-cols-1 md:grid-cols-5 py-5 bg-[#5DA5A4]">
 
 
 
-                    <div class="sticky top-0 col-span-2 h-screen ">
+                    <div class="col-span-1 md:col-span-2 md:sticky md:top-0 md:h-screen ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -204,7 +204,7 @@ export default function Page({ params }) {
                             transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
                             className=''
                         >
-                            <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                            <div className={`text-lg md:text-xl py-4 px-4 md:px-7   break-words ${langName === 'ar' && 'text-right'}`} >
 
                                 The advantages of bespoke exhibition stands are undeniable. A striking blend of unique
                                 designs and top-tier craftsmanship ensures that a custom-built exhibition stand is the ideal
@@ -231,7 +231,7 @@ export default function Page({ params }) {
                                 </ul>
                             </div>
 
-                            {/* <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                            {/* <div className={`text-lg md:text-xl py-4 px-4 md:px-7   break-words ${langName === 'ar' && 'text-right'}`} >
 
                                 We are a bespoke exhibition stand company that stands out from the rest. Our experienced team is with you every step of the way—from your first call to the design, construction, delivery, and installation of your custom exhibition stand. No matter where you&apos;re exhibiting, our tailored display stands are the ultimate solution for showcasing your brand and products effectively!
                             </div> */}
@@ -264,11 +264,11 @@ export default function Page({ params }) {
                 <div className="w-[full] h-[0.75px] bg-blue-600 my-5 shadow-[0_0_10px_rgba(37,99,235,0.8)]"></div>
 
                 {/* MODULAR TRADE SHOW BOOTH   */}
-                <div id='2' class="grid grid-cols-5 bg-[#D98880] py-5 ">
+                <div id='2' class="grid grid-cols-1 md:grid-cols-5 bg-[#D98880] py-5 ">
 
 
 
-                    <div class="sticky top-0 col-span-2 h-screen  ">
+                    <div class="col-span-1 md:col-span-2 md:sticky md:top-0 md:h-screen  ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -288,7 +288,7 @@ export default function Page({ params }) {
                             transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
                             className=''
                         >
-                            <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                            <div className={`text-lg md:text-xl py-4 px-4 md:px-7   break-words ${langName === 'ar' && 'text-right'}`} >
 
                                 When brainstorming the best exhibition stand ideas for your business, it&apos;s important to think about the long-term value of your display.
                                 Modular exhibition stands are a fantastic choice for businesses that regularly showcase at events.
@@ -333,11 +333,11 @@ export default function Page({ params }) {
 
 
                 {/* POP UP & FOLDABLE EXHIBITION STAND IDEAS   */}
-                <div id='3' class="grid grid-cols-5 py-5 bg-[#7A9EAB]">
+                <div id='3' class="grid grid-cols-1 md:grid-cols-5 py-5 bg-[#7A9EAB]">
 
 
 
-                    <div class="sticky top-0 col-span-2 h-screen  ">
+                    <div class="col-span-1 md:col-span-2 md:sticky md:top-0 md:h-screen  ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -357,7 +357,7 @@ export default function Page({ params }) {
                             transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
                             className=''
                         >
-                            <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                            <div className={`text-lg md:text-xl py-4 px-4 md:px-7   break-words ${langName === 'ar' && 'text-right'}`} >
 
                                 No matter what you call them, foldable, collapsible, or pop-up displays are a revolutionary solution
                                 for your exhibition needs.
@@ -395,11 +395,11 @@ export default function Page({ params }) {
 
 
                 {/* SMALL DISPLAY STANDS  */}
-                <div id='4' class="grid grid-cols-5 py-5  bg-[#A58B6F]">
+                <div id='4' class="grid grid-cols-1 md:grid-cols-5 py-5  bg-[#A58B6F]">
 
 
 
-                    <div class="sticky top-0 col-span-2 h-screen  ">
+                    <div class="col-span-1 md:col-span-2 md:sticky md:top-0 md:h-screen  ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -419,7 +419,7 @@ export default function Page({ params }) {
                             transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
                             className=''
                         >
-                            <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                            <div className={`text-lg md:text-xl py-4 px-4 md:px-7   break-words ${langName === 'ar' && 'text-right'}`} >
 
                                 We know the struggle of small exhibition spaces, and we don&apos;t want you to pay over the
                                 odds for a bigger booth when you can make a big impact in a smaller one!
@@ -465,11 +465,11 @@ export default function Page({ params }) {
 
                 {/*  LARGE DISPLAY STANDS   */}
 
-                <div id='5' class="grid grid-cols-5 py-5 bg-[#8A9A5B]">
+                <div id='5' class="grid grid-cols-1 md:grid-cols-5 py-5 bg-[#8A9A5B]">
 
 
 
-                    <div class="sticky top-0 col-span-2 h-screen  ">
+                    <div class="col-span-1 md:col-span-2 md:sticky md:top-0 md:h-screen  ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -489,7 +489,7 @@ export default function Page({ params }) {
                             transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
                             className=''
                         >
-                            <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                            <div className={`text-lg md:text-xl py-4 px-4 md:px-7   break-words ${langName === 'ar' && 'text-right'}`} >
 
                                 Our large display stands are designed to command attention and elevate your presence at any event.
                                 Perfect for businesses looking to showcase their brand on a grand scale, these stands offer plenty
@@ -528,11 +528,11 @@ export default function Page({ params }) {
 
                 {/* CUSTOM DISPLAY PLINTHS AND PEDESTALS */}
 
-                <div id='6' class="grid grid-cols-5 py-5 bg-[#9D94B7]">
+                <div id='6' class="grid grid-cols-1 md:grid-cols-5 py-5 bg-[#9D94B7]">
 
 
 
-                    <div class="sticky top-0 col-span-2 h-screen w-full ">
+                    <div class="col-span-1 md:col-span-2 md:sticky md:top-0 md:h-screen w-full ">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -552,7 +552,7 @@ export default function Page({ params }) {
                             transition={{ delay: 0.4, type: 'spring', stiffness: 100, damping: 10 }}
                             className=''
                         >
-                            <div className={`text-xl py-1 px-7  break-words ${langName === 'ar' && 'text-right'}`} >
+                            <div className={`text-lg md:text-xl py-4 px-4 md:px-7   break-words ${langName === 'ar' && 'text-right'}`} >
 
                                 Our Custom Display Plinths and Pedestals are designed to perfectly showcase your products, artworks
                                 , or branding.
