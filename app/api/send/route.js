@@ -96,7 +96,7 @@ export async function POST(req) {
     // Send the email using Resend
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev', // Replace with your verified sender email
-      to: 'abhishekabbi.work@gmail.com', // Replace with actual recipient email
+      to: 'info@expoessentials.in', // Replace with actual recipient email
       subject: `New Inquiry from ${firstName} ${lastName || ''}`,
       react: emailContent,
       attachments,
