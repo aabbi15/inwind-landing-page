@@ -38,7 +38,7 @@ export default function Page({ params }) {
 	return (
 		<main className='container mx-auto px-5'>
 			<section>
-				<div className='relative z-10 flex flex-col items-start md:items-center pt-10 mb-5 overflow-hidden'>
+				<div className='relative z-10 flex flex-col items-center pt-10 mb-5 overflow-hidden'>
 					<motion.div
 						initial={{ opacity: 0, y: 50 }}
 						animate={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ export default function Page({ params }) {
       <section className="container mx-auto px-4 py-16">
        
 	   
-        <p className=" text-gray-800 text-xl md:text-2xl text-center">
+        <p className=" text-gray-800 text-lg md:text-xl  md:text-2xl text-center">
           We specialise in crafting bespoke exhibition spaces, pop-up installations, and innovative designs 
           that leave a lasting impression. From the very first idea to the final build, we offer end-to-end 
           project management and a fully integrated, turn-key service. Our team is committed to providing a 
@@ -115,15 +115,15 @@ export default function Page({ params }) {
 		<div className="col-span-7 md:col-span-4 text-gray-100">
           <h2 className="text-3xl font-bold  mb-8 ">Who We Are</h2>
           
-            <p className=" text-gray-100 text-xl mb-4">
+            <p className=" text-gray-100 text-lg md:text-xl  mb-4">
               We&apos;re a passionate team of project managers, joiners, and designers, committed to 
               delivering an exceptional service in the industry.
             </p>
-            <p className=" text-gray-100 mb-4 text-xl">
+            <p className=" text-gray-100 mb-4 text-lg md:text-xl ">
               With years of experience and a creative approach, we ensure each project is customised 
               to your needs, and our growing portfolio of successful global projects speaks for itself.
             </p>
-            <p className=" text-gray-100 text-xl">
+            <p className=" text-gray-100 text-lg md:text-xl ">
               Driven by enthusiasm and a love for what we do, we thrive on taking on challenging 
               concepts and pushing boundaries—no matter what, we&apos;re determined to make your vision a reality.
             </p>
@@ -151,13 +151,13 @@ alt='about_1'
 		{/* <a href='https://api.whatsapp.com/send?phone=917490070001'> */}
           <h2 className="text-3xl font-bold  self-start mb-8 "> Tailored Solutions for Your Success</h2>
           {/* </a> */}
-            <p className=" text-gray-100 text-xl mb-4">
+            <p className=" text-gray-100 text-lg md:text-xl  mb-4">
 			We dive deep into your brand&apos;s DNA and trade show objectives, crafting a vision that 
               aligns perfectly with your market domination goals. We&apos;re dedicated to providing our 
               clients with expert advice throughout the entire process, whether for exhibitions or 
               pop-up installations.
             </p>
-            <p className=" text-gray-100 mb-4 text-xl flex items-center"> 
+            <p className=" text-gray-100 mb-4 text-lg md:text-xl  flex items-center"> 
 			From guiding you through your budget and planning your installation to choosing the 
 			ideal design, we&apos;re here to make it all run smoothly.
 			</p>
@@ -181,7 +181,7 @@ alt='about_1'
       </section>
 
       {/* Tailored Solutions Section */}
-	  <section className="container mx-auto px-8 py-16 text-gray-800 text-xl md:text-2xl text-center">
+	  <section className="container mx-auto px-8 py-16 text-gray-800 text-lg md:text-xl  md:text-2xl text-center">
        
 	  
 	   <p className=" text-gray-800 mb-6">
