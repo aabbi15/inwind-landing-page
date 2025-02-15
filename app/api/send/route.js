@@ -5,43 +5,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req) {
   try {
-    // // Parse the request body to get form data
-    // const {
-    //   firstName,
-    //   lastName,
-    //   email,
-    //   company,
-    //   phoneNumber,
-    //   message,
-    //   serviceType,
-    //   eventLocation,
-    //   size,
-    //   file,
-      
-    // } = await req.json();
-
-
     const formData = await req.formData();
-
-    console.log('Received form data:', formData);
-
-    // console.log('Received form data:', {
-    //   firstName,
-    //   lastName,
-    //   email,
-    //   company,
-    //   phoneNumber,
-    //   serviceType,
-    //   eventLocation,
-    //   size,
-    //   file,
-    //   message,
-    // });
-
-    // Validate required fields
-    // if (!email || !message) {
-    //   return Response.json({ error: 'Email and message are required.' }, { status: 400 });
-    // }
 
     const firstName = formData.get('firstName');
     const lastName = formData.get('lastName');
@@ -52,7 +16,7 @@ export async function POST(req) {
     const serviceType = formData.get('serviceType');
     const eventLocation = formData.get('eventLocation');
     const size = formData.get('size');
-    const file = formData.get('file');
+    const file = formData.get('file'); // This might be `null` or `undefined`
 
     console.log('Received form data:', {
       firstName,
@@ -67,8 +31,7 @@ export async function POST(req) {
       message,
     });
 
-
-    // Prepare email content using the EmailTemplate component
+    // Prepare email content
     const emailContent = EmailTemplate({
       firstName,
       lastName,
@@ -78,37 +41,43 @@ export async function POST(req) {
       serviceType,
       eventLocation,
       size,
-      // file,
       message,
     });
 
-    const attachments = file
-      ? [
-          {
-            filename: "attachment.pdf", // Adjust based on file type
-            content: file.split("base64,")[1], // Extract Base64 content
-          },
-        ]
-      : [];
+    let attachments = [];
 
-      console.log('Email Content:', emailContent,attachments);
+    if (file && file instanceof File) {
+      const arrayBuffer = await file.arrayBuffer();
+      const base64File = Buffer.from(arrayBuffer).toString('base64');
 
-    // Send the email using Resend
-    const { data, error } = await resend.emails.send({
-      from: 'onboarding@resend.dev', // Replace with your verified sender email
-      to: 'info@expoessentials.in', // Replace with actual recipient email
+      attachments.push({
+        filename: file.name || 'attachment.pdf', // Default name if missing
+        content: base64File,
+      });
+    }
+
+    console.log('Email Content:', emailContent, 'Attachments:', attachments);
+
+    // Construct email options
+    const emailOptions = {
+      from: 'onboarding@resend.dev',
+      to: 'info@expoessentials.in',
       subject: `New Inquiry from ${firstName} ${lastName || ''}`,
       react: emailContent,
-      attachments,
-    });
+    };
 
-    // Check for errors in the Resend API response
+    // Only add attachments if there is a valid file
+    if (attachments.length > 0) {
+      emailOptions.attachments = attachments;
+    }
+
+    const { data, error } = await resend.emails.send(emailOptions);
+
     if (error) {
       console.error('Error sending email:', error);
       return Response.json({ error }, { status: 500 });
     }
 
-    // Return success response
     return Response.json({ message: 'Email sent successfully!', data }, { status: 200 });
   } catch (error) {
     console.error('Server error:', error);
