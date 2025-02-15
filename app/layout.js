@@ -20,7 +20,7 @@ export async function generateMetadata({ params, searchParams }) {
 	const lang = headersList.get('x-language-directory') ? headersList.get('x-language-directory') : 'en'
 
 	return {
-		title: SiteConfig[lang].name,
+		title: "Expo Essentials",
 		description: SiteConfig[lang].description,
 		keywords: SiteConfig[lang].keywords,
 		authors: SiteConfig[lang].authors,
