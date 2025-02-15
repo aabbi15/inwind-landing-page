@@ -8,7 +8,7 @@ export default function Cta({ locale, CTALocale }) {
 	return (
 		<section
 			id='feature'
-			className='relative py-10 md:py-20'
+			className=' relative py-10 md:py-20'
 		>
 			<motion.div
 				initial={{ opacity: 0, y: 50 }}
@@ -17,26 +17,19 @@ export default function Cta({ locale, CTALocale }) {
 					duration: 0.5,
 				}}
 			>
-				<div className='relative z-10 flex flex-col gap-5 items-start md:items-center mb-10 mx-auto'>
-					<h2 className='font-bold  text-5xl md:text-7xl bg-gradient-to-r from-base-content from-50% to-[#9c9c9c] md:text-center bg-clip-text text-transparent !leading-[1.25em]'>
+				<div className='relative z-10 flex flex-col gap-5 items-center mb-10 mx-auto'>
+					<h2 className='font-bold  text-5xl md:text-7xl bg-gradient-to-r from-base-content from-50% to-[#9c9c9c] text-center bg-clip-text text-transparent !leading-[1.25em]'>
 						{/* {locale.h2} */}
 						Launch Your Expo Booth Today
 					</h2>
 
-					<h3 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center'>
+					<h3 className='w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 text-center'>
 					
 					{/* {locale.h3} */}
 					Set up your custom expo booth, showcase your offerings, and start connecting with your audience!					
 					</h3>
 
-					{/* <a
-						title='get source code'
-						className='mt-10 btn btn-sm md:btn-md btn-base border-none hover:ring-1 ring-base-content text-base-100 hover:text-base-content bg-base-content hover:bg-base-100 rounded-full'
-						href='#'
-					>
-						<SiGithub /> {CTALocale.btn1}
-					</a> */}
-
+					
 					{/* <Button/> */}
 					<CTAButton className='mt-5'/>
 				</div>
