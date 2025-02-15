@@ -132,7 +132,7 @@ export default function Page({ params }) {
 
             {/* Heading section */}
             <section>
-                <div className='relative z-10 flex flex-col items-start md:items-center pt-10 mb-5 overflow-hidden'>
+                <div className='relative z-10 flex flex-col items-center pt-10 mb-5 overflow-hidden'>
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -197,7 +197,7 @@ export default function Page({ params }) {
             <section className="py-16 px-4 sm:px-6 lg:px-8 ">
         <div className=" mx-auto">
          
-          <p className=" text-gray-800 max-w3xl text-xl mx-auto text-center mb-8">
+          <p className=" text-gray-800 max-w3xl text-lg md:text-xl mx-auto text-center mb-8">
             Planning your exhibition stand can feel overwhelming, but it doesn&apos;t have to be! Our guide is designed to make the process smooth, insightful, and enjoyable. 
             Whether you&apos;re a first-timer or a seasoned exhibitor, we&apos;ve got you covered with everything you need to ensure
              your display stands out and delivers results.
