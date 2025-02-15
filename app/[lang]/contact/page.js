@@ -114,7 +114,7 @@ export default function Example() {
           duration: 1,
         }}
       >
-        <h2 className="w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 md:text-center mb-5 md:mb-10">
+        <h2 className="w-full md:w-10/12 mx-auto text-xl md:text-2xl text-base-content/80 text-center mb-5 md:mb-10">
           Reach out to us for any inquiries or questions you may have.
         </h2>
       </motion.div>
