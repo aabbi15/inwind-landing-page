@@ -46,34 +46,53 @@ export async function POST(req) {
 
     let attachments = [];
 
-if (file && typeof file === 'string') {
-  // Case 1: Handle base64 string (e.g., data URL)
-  if (file.startsWith('data:')) {
-    // If the file is a base64 encoded string (e.g., an image or PDF)
-    attachments.push({
-      filename: 'attachment.pdf', // Or set a name based on the context
-      content: file.split(',')[1], // Base64 string content
-    });
-  }
-  // Case 2: Handle file URL or path string
-  else if (file.startsWith('http')) {
-    // If the file is a URL, fetch it
-    const response = await fetch(file);
-    const arrayBuffer = await response.arrayBuffer();
-    const base64File = Buffer.from(arrayBuffer).toString('base64');
+    if (file && typeof file === 'string') {
+      // Case 1: Handle base64 string (e.g., data URL)
+      if (file.startsWith('data:')) {
+        // Extract the MIME type from the base64 string (before the comma)
+        const mimeType = file.split(';')[0].split(':')[1]; // Example: 'image/jpeg'
     
-    attachments.push({
-      filename: 'attachment.pdf', // Change to actual filename if available
-      content: base64File,
-    });
-  } else {
-    console.log('Received file as a plain string:', file);
-    // Handle plain string (file name or description)
-  }
-}
-
-console.log('Attachments:', attachments);
-
+        // Use the MIME type to infer the extension
+        const extension = mimeType.split('/')[1]; // For 'image/jpeg', it will be 'jpeg'
+    
+        // Generate filename dynamically based on MIME type
+        const filename = `attachment.${extension}`;
+    
+        attachments.push({
+          filename, // Use dynamically determined filename
+          content: file.split(',')[1], // Base64 string content
+        });
+      }
+    
+      // Case 2: Handle file URL or path string
+      else if (file.startsWith('http')) {
+        // If the file is a URL, fetch it and determine its MIME type
+        const response = await fetch(file);
+        const buffer = await response.arrayBuffer();
+        
+        // Detect the file type from the buffer or response headers
+        const mimeType = response.headers.get('Content-Type'); // e.g., 'image/jpeg'
+        const extension = mimeType.split('/')[1]; // Get the file extension from MIME type
+    
+        const base64File = Buffer.from(buffer).toString('base64');
+        
+        const filename = `attachment.${extension}`;
+    
+        attachments.push({
+          filename, // Use dynamically determined filename
+          content: base64File,
+        });
+      }
+    
+      // Case 3: Handle file as a plain string (e.g., filename or description)
+      else {
+        console.log('Received file as a plain string:', file);
+        // Handle plain string (file name or description)
+      }
+    }
+    
+    console.log('Attachments:', attachments);
+    
 
     // Construct email options
     const emailOptions = {
