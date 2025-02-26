@@ -46,19 +46,34 @@ export async function POST(req) {
 
     let attachments = [];
 
-    console.log(typeof file, file instanceof File);
+if (file && typeof file === 'string') {
+  // Case 1: Handle base64 string (e.g., data URL)
+  if (file.startsWith('data:')) {
+    // If the file is a base64 encoded string (e.g., an image or PDF)
+    attachments.push({
+      filename: 'attachment.pdf', // Or set a name based on the context
+      content: file.split(',')[1], // Base64 string content
+    });
+  }
+  // Case 2: Handle file URL or path string
+  else if (file.startsWith('http')) {
+    // If the file is a URL, fetch it
+    const response = await fetch(file);
+    const arrayBuffer = await response.arrayBuffer();
+    const base64File = Buffer.from(arrayBuffer).toString('base64');
+    
+    attachments.push({
+      filename: 'attachment.pdf', // Change to actual filename if available
+      content: base64File,
+    });
+  } else {
+    console.log('Received file as a plain string:', file);
+    // Handle plain string (file name or description)
+  }
+}
 
-    if (file && file instanceof File) {
-      const arrayBuffer = await file.arrayBuffer();
-      const base64File = Buffer.from(arrayBuffer).toString('base64');
+console.log('Attachments:', attachments);
 
-      attachments.push({
-        filename: file.name || 'attachment.pdf', // Default name if missing
-        content: base64File,
-      });
-    }
-
-    console.log('Email Content:', emailContent, 'Attachments:', attachments);
 
     // Construct email options
     const emailOptions = {
