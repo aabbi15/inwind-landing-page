@@ -46,7 +46,7 @@ export async function POST(req) {
 
     let attachments = [];
 
-    if (file && file instanceof File) {
+    // if (githfile && file instanceof File) {
       const arrayBuffer = await file.arrayBuffer();
       const base64File = Buffer.from(arrayBuffer).toString('base64');
 
@@ -54,7 +54,7 @@ export async function POST(req) {
         filename: file.name || 'attachment.pdf', // Default name if missing
         content: base64File,
       });
-    }
+    // }
 
     console.log('Email Content:', emailContent, 'Attachments:', attachments);
 
